@@ -2,9 +2,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class CleanScrape {
+public class StartHere {
 
     public WebDriver driver = new FirefoxDriver();
+
+    public static void main(String[] args) {
+        Personal personal = new Personal();
+        String username = personal.getUsername();
+        String password = personal.getPassword();
+
+        System.setProperty("webdriver.gecko.driver", "/Users/twilorip/Desktop/webDrivers/firefox/geckodriver");
+        StartHere cleanScrape = new StartHere();
+        cleanScrape.openSite();
+        cleanScrape.login(username, password);
+
+    }
 
     public void openSite() {
         driver.get("https://www.yahoo.com/");
@@ -34,17 +46,5 @@ public class CleanScrape {
         } catch (Exception e) {
             System.out.println(e);
         }
-    }
-
-    public static void main(String[] args) {
-        Personal personal = new Personal();
-        String username = personal.getUsername();
-        String password = personal.getPassword();
-
-        System.setProperty("webdriver.gecko.driver", "/Users/twilorip/Desktop/webDrivers/firefox/geckodriver");
-        CleanScrape cleanScrape = new CleanScrape();
-        cleanScrape.openSite();
-        cleanScrape.login(username, password);
-
     }
 }

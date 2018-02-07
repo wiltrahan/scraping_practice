@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CleanScrape.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CleanScrape.java">
+      <file leaf-file-name="StartHere.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StartHere.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,15 +66,16 @@
         <option value="$PROJECT_DIR$/src/TestSelenium.java" />
         <option value="$PROJECT_DIR$/status.txt" />
         <option value="$PROJECT_DIR$/src/ChromeScrape.java" />
-        <option value="$PROJECT_DIR$/src/CleanScrape.java" />
         <option value="$PROJECT_DIR$/src/Personal.java" />
         <option value="$PROJECT_DIR$/src/WebScrapper.java" />
+        <option value="$PROJECT_DIR$/src/CleanScrape.java" />
+        <option value="$PROJECT_DIR$/src/StartHere.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
-    <option name="y" value="23" />
+    <option name="x" value="3" />
+    <option name="y" value="369" />
     <option name="width" value="1382" />
     <option name="height" value="835" />
   </component>
@@ -144,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CleanScrape">
+  <component name="RunManager" selected="Application.StartHere">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -165,9 +166,9 @@
       <module name="WebDriver_basics" />
       <envs />
     </configuration>
-    <configuration name="CleanScrape" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="StartHere" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="CleanScrape" />
+      <option name="MAIN_CLASS_NAME" value="StartHere" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -255,7 +256,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.ChromeScrape" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CleanScrape" />
+      <item index="1" class="java.lang.String" itemvalue="Application.StartHere" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -275,7 +276,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="23" width="1382" height="835" extended-state="0" />
+    <frame x="3" y="369" width="1382" height="835" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -286,7 +287,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46044776" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46044776" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833788" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -452,10 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CleanScrape.java">
+    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
