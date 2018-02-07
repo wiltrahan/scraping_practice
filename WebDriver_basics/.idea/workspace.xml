@@ -15,13 +15,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WebScrapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WebScrapper.java">
+      <file leaf-file-name="CleanScrape.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CleanScrape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            <state relative-caret-position="450">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Personal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Personal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,12 +66,14 @@
         <option value="$PROJECT_DIR$/src/TestSelenium.java" />
         <option value="$PROJECT_DIR$/status.txt" />
         <option value="$PROJECT_DIR$/src/ChromeScrape.java" />
+        <option value="$PROJECT_DIR$/src/CleanScrape.java" />
+        <option value="$PROJECT_DIR$/src/Personal.java" />
         <option value="$PROJECT_DIR$/src/WebScrapper.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
+    <option name="x" value="5" />
     <option name="y" value="23" />
     <option name="width" value="1382" />
     <option name="height" value="835" />
@@ -127,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebScrapper">
+  <component name="RunManager" selected="Application.CleanScrape">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -148,9 +165,9 @@
       <module name="WebDriver_basics" />
       <envs />
     </configuration>
-    <configuration name="WebScrapper" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="CleanScrape" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WebScrapper" />
+      <option name="MAIN_CLASS_NAME" value="CleanScrape" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -238,7 +255,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.ChromeScrape" />
-      <item index="1" class="java.lang.String" itemvalue="Application.WebScrapper" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CleanScrape" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -258,18 +275,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="23" width="1382" height="835" extended-state="0" />
+    <frame x="5" y="23" width="1382" height="835" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32702702" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6089552" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46044776" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833788" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -322,9 +339,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="93" column="45" lean-forward="false" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -348,9 +363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="93" column="45" lean-forward="false" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -397,14 +410,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ChromeScrape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="96" lean-forward="false" selection-start-line="13" selection-start-column="96" selection-end-line="13" selection-end-column="96" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Personal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,15 +444,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebScrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="1260">
+          <caret line="84" column="6" lean-forward="false" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CleanScrape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
