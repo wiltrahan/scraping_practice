@@ -12,13 +12,12 @@ public class StartHere {
         String password = personal.getPassword();
 
         System.setProperty("webdriver.gecko.driver", "/Users/twilorip/Desktop/webDrivers/firefox/geckodriver");
-        StartHere cleanScrape = new StartHere();
-        cleanScrape.openSite();
-        cleanScrape.login(username, password);
-
+        StartHere startHere = new StartHere();
+        startHere.openSite();
+        startHere.login(username, password);
     }
 
-    public void openSite() {
+    private void openSite() {
         driver.get("https://www.yahoo.com/");
 
         try {
@@ -28,7 +27,7 @@ public class StartHere {
         }
     }
 
-    public void login(String username, String password) {
+    private void login(String username, String password) {
         try {
             driver.findElement(By.id("login-username")).sendKeys(username);
             driver.findElement(By.id("login-signin")).click();
@@ -39,12 +38,17 @@ public class StartHere {
 
     }
 
-    public void pass(String password) {
+    private void pass(String password) {
         try {
             driver.findElement(By.id("login-passwd")).sendKeys(password);
             driver.findElement(By.id("login-signin")).click();
         } catch (Exception e) {
             System.out.println(e);
         }
+        openFinance();
+    }
+
+    private void openFinance() {
+        driver.navigate().to("https://finance.yahoo.com/");
     }
 }
