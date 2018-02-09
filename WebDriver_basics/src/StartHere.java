@@ -19,7 +19,6 @@ public class StartHere {
         StartHere startHere = new StartHere();
         startHere.openSite();
         startHere.login(username, password);
-
     }
 
     private void openSite() {
@@ -61,20 +60,15 @@ public class StartHere {
         } catch (Exception e) {
             System.out.println(e);
         }
-
-
     }
 
     public void getText() throws IOException {
-        List titles = new ArrayList<String>();
+        List<String> titles = new ArrayList<>();
         for(int i = 1; i <= 10; i++) {
-            //titles.add(driver.findElement(By.xpath("//*[@id=\"main\"]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[1]/span/a")).getText() + "\n");
             titles.add(driver.findElement(By.xpath("//*[@id=\"main\"]/section/section[2]/div[2]/table/tbody/tr[" + i + "]")).getText() + "\n");
         }
         Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("status.txt"), "utf-8"));
         writer.write(titles.toString());
         writer.close();
     }
-
 }
-//*[@id="main"]/section/section[2]/div[2]/table/tbody/tr[i]
