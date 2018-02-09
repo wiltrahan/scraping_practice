@@ -15,7 +15,6 @@ public class StartHere {
         StartHere startHere = new StartHere();
         startHere.openSite();
         startHere.login(username, password);
-
     }
 
     private void openSite() {
@@ -31,6 +30,7 @@ public class StartHere {
         try {
             driver.findElement(By.id("login-username")).sendKeys(username);
             driver.findElement(By.id("login-signin")).click();
+            Thread.sleep(3000);
             pass(password);
         } catch (Exception e) {
             System.out.println(e);
@@ -41,11 +41,16 @@ public class StartHere {
         try {
             driver.findElement(By.id("login-passwd")).sendKeys(password);
             driver.findElement(By.id("login-signin")).click();
+            Thread.sleep(2000);
+            toPortfolio();
         } catch (Exception e) {
             System.out.println(e);
         }
     }
 
+    private void toPortfolio() {
+        driver.navigate().to("https://finance.yahoo.com/portfolio/p_0/view/v1");
+    }
 
 }
 
