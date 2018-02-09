@@ -1,41 +1,11 @@
-[NAMM 2018
-Phase Looks to Replace DVS Timecode with Wireless Vinyl Tracking: NAMM 2018
-DAN WHITE Jan 25, 2018
-46 Comments
-The era of DVS might be finally coming to a close - and we're not talking about the Rane Twelve controller. MWM (the company behind the wireless MixFader), has announced Phase, a new wireless tracker for turntable DJs. Instead of using…
-, NAMM 2018
-Ortofon Launches Concorde MK2 Turntable Cartridge Line at NAMM 2018
-DAN WHITE Jan 24, 2018
-6 Comments
-For NAMM 2018, Ortofon has refreshed their entire popular Concorde line with a five models, each specialized for different uses and all sporting a new distinctive look.
-, NAMM 2018
-Volca Mix: Korg’s Compact Gear Mixer
-DEAN ZULUETA Jan 24, 2018
-3 Comments
-Korg is announcing a new analogue mixer that ties together their entire Volca lineup at NAMM 2018.
-, NAMM 2018
-DJM-REC: Pioneer DJ’s New Set Recorder for iOS
-DEAN ZULUETA Jan 23, 2018
-16 Comments
-DJs from every genre like to record mixes. Recording mixes give DJs a portfolio of their work and re-listening to old mixes is a great constructive practice. However, recording a mix can be stressful. Everything is dark, the DJ before is…
-, NEWS
-Reloop KUT: Classic Design Battle Mixer with Innofader + FX
-DAN WHITE Jan 22, 2018
-21 Comments
-We've seen a resurgence in turntablism-oriented gear in the last few years, so today's announcement from Reloop seems like a natural progression. The Reloop KUT is a two channel mixer, with built-in FX and an InnoFader crossfader. To top it…
-, NAMM 2018
-Engine Prime 1.1 Released: Subfolders for iTunes Playlists
-DAN WHITE Jan 22, 2018
-4 Comments
-SC5000 users get excited: you can now import full iTunes hierarchies in to Engine Prime. Read about this and other improvements in the Engine Prime 1.1 release.
-, FINGER DRUMMING
-Choke Soundpacks Volume 1: Out Now!
-MATÍAS PADILLA Jan 22, 2018
-3 Comments
-After a year of sworn secrecy, tons of work, and a whole lot of passion, Choke soundpacks are finally here! Enjoy artists like Flume, feel-good hip hop, and 80s synths? You'll go crazy for these packs. Watch the video to hear them for…
-, REKORDBOX DJ TIPS
-Rekordbox 5.1 Lyric, Rekordbox 5.2 Lighting, and RB-DMX1
-DAN WHITE Jan 18, 2018
-20 Comments
-Instead of just one Rekordbox DJ announcement today, Pioneer DJ has two. Rekordbox 5.1 is out later today, while Rekordbox 5.2 is set to launch in mid-February. In 5.1, users will have access to a new (paid) Plus pack, Lyric, that generates…
+[GE 14.45 -0.80 -5.25% USD 4:00 PM EST 138.64M - 90.08M 125.31B
+, TSLA 315.23 -29.77 -8.63% USD 4:00 PM EST 10.31M - 5.77M 53.23B
+, GOOG 1,001.52 -47.06 -4.49% USD 4:00 PM EST 2.86M - 1.49M 698.99B
+, TWTR 30.18 +3.27 +12.15% USD 4:02 PM EST 162.43M - 21.62M 22.32B
+, XOM 76.07 -0.87 -1.13% USD 4:01 PM EST 25.65M - 11.95M 322.32B
+, FB 171.58 -8.60 -4.77% USD 4:00 PM EST 38.48M - 19.71M 498.58B
+, NFLX 250.10 -14.46 -5.47% USD 4:00 PM EST 9.31M - 7.93M 108.53B
+, AMZN 1,350.50 -66.28 -4.68% USD 4:00 PM EST 8.58M - 4.26M 650.77B
+, NKE 62.46 -3.17 -4.83% USD 4:00 PM EST 14.12M - 8.83M 101.62B
+, AAPL 155.15 -4.39 -2.75% USD 4:00 PM EST 54.39M - 31.03M 787.23B
 ]
