@@ -18,11 +18,31 @@
       <file leaf-file-name="StartHere.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StartHere.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+            <state relative-caret-position="95">
+              <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="symbols.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symbols.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/status.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,15 +105,15 @@
         <option value="$PROJECT_DIR$/src/Personal.java" />
         <option value="$PROJECT_DIR$/src/WebScrapper.java" />
         <option value="$PROJECT_DIR$/src/CleanScrape.java" />
-        <option value="$PROJECT_DIR$/status.txt" />
         <option value="$PROJECT_DIR$/demoSchema.txt" />
         <option value="$PROJECT_DIR$/src/DB.java" />
+        <option value="$PROJECT_DIR$/status.txt" />
         <option value="$PROJECT_DIR$/src/StartHere.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
+    <option name="x" value="54" />
     <option name="y" value="23" />
     <option name="width" value="1349" />
     <option name="height" value="835" />
@@ -337,7 +357,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="23" width="1349" height="835" extended-state="0" />
+    <frame x="54" y="23" width="1349" height="835" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -626,15 +646,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/status.txt">
+    <entry file="file://$PROJECT_DIR$/values.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/values.txt">
+    <entry file="file://$PROJECT_DIR$/status.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbols.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -644,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StartHere.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+        <state relative-caret-position="95">
+          <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

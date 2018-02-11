@@ -1,0 +1,11 @@
+[GE
+, TSLA
+, GOOG
+, TWTR
+, XOM
+, FB
+, NFLX
+, AMZN
+, NKE
+, AAPL
+]

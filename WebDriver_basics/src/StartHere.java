@@ -56,21 +56,33 @@ public class StartHere {
         try {
             driver.navigate().to("https://finance.yahoo.com/portfolio/p_0/view/v1");
             Thread.sleep(3000);
-            tableScrape();
+            //tableScrape();
+            symbolScrape();
         } catch (Exception e) {
             System.out.println(e);
         }
     }
 
-    public void tableScrape() throws IOException {
-        List<String> titles = new ArrayList<>();
-        for(int i = 1; i <= 10; i++) {
-            titles.add(driver.findElement(By.xpath("//*[@id=\"main\"]/section/section[2]/div[2]/table/tbody/tr[" + i + "]")).getText() + "\n");
+//    public void tableScrape() throws IOException {
+//        List<String> titles = new ArrayList<>();
+//        for(int i = 1; i <= 10; i++) {
+//            titles.add(driver.findElement(By.xpath("//*[@id=\"main\"]/section/section[2]/div[2]/table/tbody/tr[" + i + "]")).getText() + "\n");
+//        }
+//        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("status.txt"), "utf-8"));
+//        writer.write(titles.toString());
+//        writer.close();
+//        valuesScrape();
+//    }
+
+    public void symbolScrape() throws IOException {
+        List<String> symbols = new ArrayList<>();
+        for(int i = 0; i < 10; i++) {
+            symbols.add(driver.findElement(By.xpath("//tr[@data-index='" + i + "']//td[@class='_1_2Qy']")).getText() + "\n");
         }
-        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("status.txt"), "utf-8"));
-        writer.write(titles.toString());
+        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("symbols.txt"), "utf-8"));
+        writer.write(symbols.toString());
         writer.close();
-        valuesScrape();
+
     }
 
     public void valuesScrape() throws IOException {
@@ -83,11 +95,8 @@ public class StartHere {
         writer.close();
     }
 }
-//total value
-//p[@class='_3wreg']
 
-//Day gain
-//span[@class='_2JT1U _3Bucv _3Stc3']
-
-//Total gain
-//span[@class='_2JT1U _3Bucv']
+//symbols
+//tr[@data-index='0']//td[@class='_1_2Qy']
+//to
+//tr[@data-index='9']//td[@class='_1_2Qy']
