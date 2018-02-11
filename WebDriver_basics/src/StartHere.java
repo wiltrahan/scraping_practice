@@ -56,13 +56,13 @@ public class StartHere {
         try {
             driver.navigate().to("https://finance.yahoo.com/portfolio/p_0/view/v1");
             Thread.sleep(3000);
-            getText();
+            tableScrape();
         } catch (Exception e) {
             System.out.println(e);
         }
     }
 
-    public void getText() throws IOException {
+    public void tableScrape() throws IOException {
         List<String> titles = new ArrayList<>();
         for(int i = 1; i <= 10; i++) {
             titles.add(driver.findElement(By.xpath("//*[@id=\"main\"]/section/section[2]/div[2]/table/tbody/tr[" + i + "]")).getText() + "\n");
@@ -70,5 +70,24 @@ public class StartHere {
         Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("status.txt"), "utf-8"));
         writer.write(titles.toString());
         writer.close();
+        valuesScrape();
+    }
+
+    public void valuesScrape() throws IOException {
+        String totalValue = driver.findElement(By.xpath("//p[@class='_3wreg']")).getText();
+        String dayGain = driver.findElement(By.xpath("//span[@class='_2JT1U _3Bucv _3Stc3']")).getText();
+        String totalGain = driver.findElement(By.xpath("//span[@class='_2JT1U _3Bucv']")).getText();
+
+        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("values.txt"), "utf-8"));
+        writer.write(totalValue + "\n" + totalGain + "\n" + dayGain);
+        writer.close();
     }
 }
+//total value
+//p[@class='_3wreg']
+
+//Day gain
+//span[@class='_2JT1U _3Bucv _3Stc3']
+
+//Total gain
+//span[@class='_2JT1U _3Bucv']

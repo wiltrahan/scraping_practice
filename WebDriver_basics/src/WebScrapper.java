@@ -49,12 +49,12 @@
 //     *
 //     * @throws IOException
 //     */
-//    public void getText() throws IOException {
+//    public void tableScrape() throws IOException {
 ////        List titles = new ArrayList<String>();
-//////        String text = driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/div/article[1]/div/h2/a")).getText();
+//////        String text = driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/div/article[1]/div/h2/a")).tableScrape();
 ////        //String text;
 ////        for(int i = 1; i <= 8; i++) {
-////            titles.add(driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/div/article[" + i + "]")).getText() + "\n");
+////            titles.add(driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/div/article[" + i + "]")).tableScrape() + "\n");
 ////        }
 ////        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("status.txt"), "utf-8"));
 ////        writer.write(titles.toString());
@@ -83,7 +83,7 @@
 //        webSrcapper.openTestSite();
 //        //webSrcapper.login("admin", "12345");
 //
-//        webSrcapper.getText();
+//        webSrcapper.tableScrape();
 //        webSrcapper.saveScreenshot();
 //        //webSrcapper.closeBrowser();
 //    }
