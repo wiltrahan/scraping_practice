@@ -6,3 +6,5 @@
 out/
 libs/
 Personal.java
+*.txt
+Test.java
