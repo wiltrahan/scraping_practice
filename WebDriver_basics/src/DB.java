@@ -10,7 +10,10 @@ public class DB {
         try {
             Connection conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement statement = conn.createStatement();
-            statement.execute("CREATE TABLE IF NOT EXISTS portfolio (symbol TEXT, value INTEGER, change INTEGER, shares INTEGER)");
+            statement.execute("CREATE TABLE IF NOT EXISTS portfolio " +
+                                    "(symbol TEXT, value DOUBLE, change TEXT, shares INTEGER)");
+            statement.execute("INSERT INTO portfolio (symbol, value, change, shares)" +
+                                    "VALUES('GE', 14.94, '+3.39%', 500)");
 
             statement.close();
             conn.close();
