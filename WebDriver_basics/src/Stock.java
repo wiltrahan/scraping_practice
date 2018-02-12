@@ -12,22 +12,19 @@ public class Stock {
         toPortfolio.add(stock);
         toPortfolio.add(stock2);
 
-
         port.portfolioList(toPortfolio);
-        //port.portfolioList(stock2);
 
         port.printPortfolio();
 
     }
-//TSLA   310.42    -4.81  -1.53%  USD      Feb 9 EST  12.93M  600.00  5.99M    52.42B
+
     private String symbol;
     private String value;
     private String dayAmtChange;
     private String dayPercentChange;
     private int totalShares;
-    //private ArrayList<Stock> myStocks;
 
-    public Stock(String symbol, String value, String dayAmtChange, String dayPercentChange, int totalShares) {
+    private Stock(String symbol, String value, String dayAmtChange, String dayPercentChange, int totalShares) {
         this.symbol = symbol;
         this.value = value;
         this.dayAmtChange = dayAmtChange;
