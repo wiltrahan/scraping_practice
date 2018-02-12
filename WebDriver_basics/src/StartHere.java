@@ -19,6 +19,30 @@ public class StartHere {
         StartHere startHere = new StartHere();
         startHere.openSite();
         startHere.login(username, password);
+
+//        Stock stock = new Stock("GE", "$14.94", "+0.49", "+3.39%", 500);
+//        Stock stock2 = new Stock("TSLA", "$310.42", "-4.81", "-1.53%", 600);
+//        List<Stock> toPortfolio = new ArrayList<>();
+
+        Portfolio port = new Portfolio();
+//        toPortfolio.add(stock);
+//        toPortfolio.add(stock2);
+//
+//        port.portfolioList(toPortfolio);
+
+        //port.printPortfolio();
+
+//        StartHere total = new StartHere();
+//        List<Total> toTotal = new ArrayList<>();
+//
+//        Total myTotals = total.valuesScrape();
+//        toTotal.add(myTotals);
+//        port.printTotals();
+        Total myTotals = startHere.valuesScrape();
+        List<Total> toTotal = new ArrayList<>();
+        toTotal.add(myTotals);
+        port.myTotals(toTotal);
+        port.printTotals();
     }
 
     private void openSite() {
@@ -57,7 +81,7 @@ public class StartHere {
             driver.navigate().to("https://finance.yahoo.com/portfolio/p_0/view/v1");
             Thread.sleep(3000);
             //tableScrape();
-            symbolScrape();
+            //symbolScrape();
         } catch (Exception e) {
             System.out.println("Something went wrong " + e.getMessage());
         }
@@ -82,22 +106,20 @@ public class StartHere {
         Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("symbols.txt"), "utf-8"));
         writer.write(symbols.toString());
         writer.close();
-        valuesScrape();
+        //valuesScrape();
 
     }
 
-    public void valuesScrape() throws IOException {
-        //commented out xpaths are for chrome
-//        String totalValue = driver.findElement(By.xpath("//p[@class='_3wreg']")).getText();
-        String totalValue = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[1]")).getText();
-//        String dayGain = driver.findElement(By.xpath("//span[@class='_2JT1U _3Bucv _3Stc3']")).getText();
+    public Total valuesScrape() {
+        String portfolioTotal = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[1]")).getText();
         String dayGain = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[2]/span")).getText();
-//        String totalGain = driver.findElement(By.xpath("//span[@class='_2JT1U _3Bucv']")).getText();
         String totalGain = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[3]/span")).getText();
 
-        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("values.txt"), "utf-8"));
-        writer.write(totalValue + "\n" + totalGain + "\n" + dayGain);
-        writer.close();
+        return new Total(portfolioTotal, dayGain, totalGain);
+//
+        //Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("values.txt"), "utf-8"));
+        //writer.write(totalValue + "\n" + totalGain + "\n" + dayGain);
+        //writer.close();
     }
 }
 
