@@ -26,9 +26,9 @@ public class Stock {
     private String value;
     private String dayAmtChg;
     private String dayPctChg;
-    private int totalShrs;
+    private String totalShrs;
 
-    public Stock(String symbol, String value, String dayAmtChange, String dayPercentChange, int totalShares) {
+    public Stock(String symbol, String value, String dayAmtChange, String dayPercentChange, String totalShares) {
         this.symbol = symbol;
         this.value = value;
         this.dayAmtChg = dayAmtChange;
@@ -53,7 +53,7 @@ public class Stock {
         return dayPctChg;
     }
 
-    public int getTotalShrs() {
+    public String getTotalShrs() {
         return totalShrs;
     }
 }

@@ -2,7 +2,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -115,10 +114,13 @@ public class OpenAndScrape {
 
     private Stock stockScrape(){
 
-        for(int i = 0; i < 10; i++) {
-            //stocks.add(driver.findElement(By.xpath("//tr[@data-index='" + i + "']//td[@class='_1_2Qy']")).getText() + "\n");
-        }
-        return new Stock();
+        String symbol = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[1]/span/a")).getText();
+        String value = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[2]/span")).getText();
+        String dayAmtChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[3]/span")).getText();
+        String dayPctChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[4]/span")).getText();
+        String totalShrs = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[8]")).getText();
+
+        return new Stock(symbol, value, dayAmtChg, dayPctChg, totalShrs);
 //        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("symbols.txt"), "utf-8"));
 //        writer.write(stocks.toString());
 //        writer.close();
