@@ -30,33 +30,15 @@ public class OpenAndScrape {
         port.myTotals(totalPortfolio);
         port.printTotals();
 
-//        Stock stock = new Stock("GE", "$14.94", "+0.49", "+3.39%", 500);
-//        Stock stock2 = new Stock("TSLA", "$310.42", "-4.81", "-1.53%", 600);
-//        List<Stock> toYahooPortfolio = new ArrayList<>()
-        Stock stock = openAndScrape.stockScrape();
-
         List<Stock> stockPortfolio = new ArrayList<>();
 
-        stockPortfolio.add(stock);
+        for (int i = 1; i <= 10; i++) {
+            Stock stock = openAndScrape.stockScrape(i);
+            stockPortfolio.add(stock);
+        }
+
         port.portfolioList(stockPortfolio);
         port.printPortfolio();
-
-
-
-//        toYahooPortfolio.add(stock);
-//        toYahooPortfolio.add(stock2);
-//
-//        port.portfolioList(toYahooPortfolio);
-
-        //port.printPortfolio();
-
-//        OpenAndScrape total = new OpenAndScrape();
-//        List<Total> toTotal = new ArrayList<>();
-//
-//        Total myTotals = total.valuesScrape();
-//        toTotal.add(myTotals);
-//        port.printTotals();
-
     }
 
     private void openSite() {
@@ -93,39 +75,20 @@ public class OpenAndScrape {
     private void toYahooPortfolio() {
         try {
             driver.navigate().to("https://finance.yahoo.com/portfolio/p_0/view/v1");
-            Thread.sleep(3000);
-            //tableScrape();
-            stockScrape();
         } catch (Exception e) {
             System.out.println("Something went wrong " + e.getMessage());
         }
     }
 
-//    public void tableScrape() throws IOException {
-//        List<String> titles = new ArrayList<>();
-//        for(int i = 1; i <= 10; i++) {
-//            titles.add(driver.findElement(By.xpath("//*[@id=\"main\"]/section/section[2]/div[2]/table/tbody/tr[" + i + "]")).getText() + "\n");
-//        }
-//        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("status.txt"), "utf-8"));
-//        writer.write(titles.toString());
-//        writer.close();
-//        valuesScrape();
-//    }
+    private Stock stockScrape(int i){
 
-    private Stock stockScrape(){
-
-        String symbol = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[1]/span/a")).getText();
-        String value = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[2]/span")).getText();
-        String dayAmtChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[3]/span")).getText();
-        String dayPctChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[4]/span")).getText();
-        String totalShrs = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[8]")).getText();
+           String symbol = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[1]/span/a")).getText();
+           String value = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[2]/span")).getText();
+           String dayAmtChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[3]/span")).getText();
+           String dayPctChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[4]/span")).getText();
+           String totalShrs = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[8]")).getText();
 
         return new Stock(symbol, value, dayAmtChg, dayPctChg, totalShrs);
-//        Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("symbols.txt"), "utf-8"));
-//        writer.write(stocks.toString());
-//        writer.close();
-        //valuesScrape();
-
     }
 
     private Total valuesScrape() {
