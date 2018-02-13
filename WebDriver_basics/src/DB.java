@@ -85,7 +85,7 @@ public class DB {
         }
     }
 
-    public boolean dbInsert() throws SQLException {
+    public void dbInsert() {
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement statement = conn.createStatement();
@@ -96,22 +96,18 @@ public class DB {
                                                 COLUMN_STOCK_DAYAMTCHG + ", " +
                                                 COLUMN_STOCK_DAYPCTCHG + ", " +
                                                 COLUMN_STOCK_TOTALSHRS +
-                                        " ) " +
-                                        "VALUES(" + this.myStocks.get(i).getSymbol() + ", " +
-                                                     this.myStocks.get(i).getValue() + ", " +
-                                                     this.myStocks.get(i).getDayAmtChg() + ", " +
-                                                     this.myStocks.get(i).getDayPctChg() + ", " +
-                                                     this.myStocks.get(i).getTotalShrs() + ")"
+                                        ") " +
+                                        "VALUES('" + this.myStocks.get(i).getSymbol() + "', '" +
+                                                     this.myStocks.get(i).getValue() + "', '" +
+                                                     this.myStocks.get(i).getDayAmtChg() + "', '" +
+                                                     this.myStocks.get(i).getDayPctChg() + "', '" +
+                                                     this.myStocks.get(i).getTotalShrs() + "')"
                                     );
-
-
             }
-
-            return true;
         } catch (SQLException e) {
             System.out.println("Could not insert data: " + e.getMessage());
             e.printStackTrace();
-            return false;
+
         }
     }
 }
