@@ -2,33 +2,27 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DB {
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //
-//        try {
-//            Connection conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
-//            Statement statement = conn.createStatement();
-//            statement.execute("CREATE TABLE IF NOT EXISTS portfolio " +
-//                    "(symbol TEXT, value DOUBLE, change TEXT, shares INTEGER)");
-//            statement.execute("INSERT INTO portfolio (symbol, value, change, shares)" +
-//                    "VALUES('GE', 14.94, '+3.39%', 500)");
-//
-//            statement.close();
-//            conn.close();
-//
-//        } catch(SQLException e) {
-//            System.out.println("Something went wrong " + e.getMessage());
+//        DB db = new DB();
+//        if(!db.open()) {
+//            System.out.println("Can't open DB");
+//            return;
 //        }
-//
-        DB db = new DB();
-        if(!db.open()) {
-            System.out.println("Can't open DB");
-            return;
-        }
-        db.createDB();
-        db.close();
+//        db.createDB();
+//        db.close();
+//    }
+
+    private ArrayList<Stock> myStocks;
+    //private ArrayList<Total> myTotalValue;
+
+    public void portfolioList(List<Stock>stock) {
+        myStocks = new ArrayList<>(stock);
     }
 
     public static final String DB_NAME = "portfolio.db";
@@ -88,6 +82,36 @@ public class DB {
             }
         } catch(SQLException e) {
             System.out.println("Couldn't close connection: " + e.getMessage());
+        }
+    }
+
+    public boolean dbInsert() throws SQLException {
+        try {
+            conn = DriverManager.getConnection(CONNECTION_STRING);
+            Statement statement = conn.createStatement();
+            for(int i = 0; i < this.myStocks.size(); i++) {
+                statement.execute("INSERT INTO " + TABLE_STOCKS +
+                                        " (" + COLUMN_STOCK_SYMBOL + ", " +
+                                                COLUMN_STOCK_VALUE + ", " +
+                                                COLUMN_STOCK_DAYAMTCHG + ", " +
+                                                COLUMN_STOCK_DAYPCTCHG + ", " +
+                                                COLUMN_STOCK_TOTALSHRS +
+                                        " ) " +
+                                        "VALUES(" + this.myStocks.get(i).getSymbol() + ", " +
+                                                     this.myStocks.get(i).getValue() + ", " +
+                                                     this.myStocks.get(i).getDayAmtChg() + ", " +
+                                                     this.myStocks.get(i).getDayPctChg() + ", " +
+                                                     this.myStocks.get(i).getTotalShrs() + ")"
+                                    );
+
+
+            }
+
+            return true;
+        } catch (SQLException e) {
+            System.out.println("Could not insert data: " + e.getMessage());
+            e.printStackTrace();
+            return false;
         }
     }
 }

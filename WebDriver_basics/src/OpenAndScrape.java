@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class OpenAndScrape {
 
     private WebDriver driver = new FirefoxDriver();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Personal personal = new Personal();
         String username = personal.getUsername();
         String password = personal.getPassword();
@@ -39,6 +40,12 @@ public class OpenAndScrape {
 
         port.portfolioList(stockPortfolio);
         port.printPortfolio();
+
+        DB db = new DB();
+        db.open();
+        db.portfolioList(stockPortfolio);
+        db.dbInsert();
+        db.close();
     }
 
     private void openSite() {
