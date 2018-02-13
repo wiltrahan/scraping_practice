@@ -15,14 +15,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StartHere.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+      <file leaf-file-name="OpenAndScrape.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            <state relative-caret-position="1419">
+              <caret line="124" column="25" lean-forward="true" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4485#4487#0" expanded="false" />
+                <element signature="e#981#1055#0" expanded="false" />
+                <element signature="e#1416#1454#0" expanded="false" />
+                <element signature="e#3259#3311#0" expanded="false" />
+                <element signature="e#4018#4133#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -31,19 +34,19 @@
       <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="480">
+              <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding>
-                <element signature="e#1194#1195#0" expanded="true" />
-                <element signature="e#1223#1224#0" expanded="true" />
-                <element signature="e#1255#1256#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1439#1440#0" expanded="true" />
-                <element signature="e#1474#1475#0" expanded="true" />
-                <element signature="e#1508#1509#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1239#1240#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1303#1304#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1371#1372#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1468#1469#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,12 +58,12 @@
             <state relative-caret-position="390">
               <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +72,8 @@
       <file leaf-file-name="Portfolio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="165">
+              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#209#210#0" expanded="true" />
@@ -137,10 +140,11 @@
         <option value="$PROJECT_DIR$/src/Stocks.java" />
         <option value="$PROJECT_DIR$/values.txt" />
         <option value="$PROJECT_DIR$/src/Totals.java" />
-        <option value="$PROJECT_DIR$/src/Total.java" />
         <option value="$PROJECT_DIR$/src/Portfolio.java" />
-        <option value="$PROJECT_DIR$/src/Stock.java" />
         <option value="$PROJECT_DIR$/src/StartHere.java" />
+        <option value="$PROJECT_DIR$/src/Total.java" />
+        <option value="$PROJECT_DIR$/src/Stock.java" />
+        <option value="$PROJECT_DIR$/src/OpenAndScrape.java" />
       </list>
     </option>
   </component>
@@ -238,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StartHere">
+  <component name="RunManager" selected="Application.OpenAndScrape">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -273,9 +277,9 @@
       <module name="WebDriver_basics" />
       <envs />
     </configuration>
-    <configuration name="StartHere" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="OpenAndScrape" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="StartHere" />
+      <option name="MAIN_CLASS_NAME" value="OpenAndScrape" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -391,7 +395,7 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ChromeScrape" />
-      <item index="1" class="java.lang.String" itemvalue="Application.StartHere" />
+      <item index="1" class="java.lang.String" itemvalue="Application.OpenAndScrape" />
       <item index="2" class="java.lang.String" itemvalue="Application.DB" />
       <item index="3" class="java.lang.String" itemvalue="Application.Test" />
       <item index="4" class="java.lang.String" itemvalue="Application.Stock" />
@@ -461,7 +465,9 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -502,27 +508,30 @@
         <state relative-caret-position="510">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4485#4487#0" expanded="false" />
+            <element signature="e#981#1055#0" expanded="false" />
+            <element signature="e#1416#1454#0" expanded="false" />
+            <element signature="e#3259#3311#0" expanded="false" />
+            <element signature="e#4018#4133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -544,13 +553,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4485#4487#0" expanded="false" />
+            <element signature="e#981#1055#0" expanded="false" />
+            <element signature="e#1416#1454#0" expanded="false" />
+            <element signature="e#3259#3311#0" expanded="false" />
+            <element signature="e#4018#4133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,13 +591,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4485#4487#0" expanded="false" />
+            <element signature="e#981#1055#0" expanded="false" />
+            <element signature="e#1416#1454#0" expanded="false" />
+            <element signature="e#3259#3311#0" expanded="false" />
+            <element signature="e#4018#4133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -608,13 +623,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4485#4487#0" expanded="false" />
+            <element signature="e#981#1055#0" expanded="false" />
+            <element signature="e#1416#1454#0" expanded="false" />
+            <element signature="e#3259#3311#0" expanded="false" />
+            <element signature="e#4018#4133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -644,13 +662,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4485#4487#0" expanded="false" />
+            <element signature="e#981#1055#0" expanded="false" />
+            <element signature="e#1416#1454#0" expanded="false" />
+            <element signature="e#3259#3311#0" expanded="false" />
+            <element signature="e#4018#4133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -662,13 +683,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4485#4487#0" expanded="false" />
+            <element signature="e#981#1055#0" expanded="false" />
+            <element signature="e#1416#1454#0" expanded="false" />
+            <element signature="e#3259#3311#0" expanded="false" />
+            <element signature="e#4018#4133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,16 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -794,44 +808,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Total.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="165">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
@@ -842,13 +866,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartHere.java">
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state relative-caret-position="1419">
+          <caret line="124" column="25" lean-forward="true" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4485#4487#0" expanded="false" />
+            <element signature="e#981#1055#0" expanded="false" />
+            <element signature="e#1416#1454#0" expanded="false" />
+            <element signature="e#3259#3311#0" expanded="false" />
+            <element signature="e#4018#4133#0" expanded="false" />
           </folding>
         </state>
       </provider>

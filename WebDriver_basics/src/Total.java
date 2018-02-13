@@ -6,7 +6,7 @@ public class Total {
     private String portfolioGainTotal;
 
 
-    public Total(String portfolioTotal, String portfolioDayGain, String portfolioGainTotal) {
+    Total(String portfolioTotal, String portfolioDayGain, String portfolioGainTotal) {
         this.portfolioTotal = portfolioTotal;
         this.portfolioDayGain = portfolioDayGain;
         this.portfolioGainTotal = portfolioGainTotal;

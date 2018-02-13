@@ -13,7 +13,7 @@ public class Stock {
 //
 //        port.printPortfolio();
 //
-//        StartHere total = new StartHere();
+//        OpenAndScrape total = new OpenAndScrape();
 //        List<Total> toTotal = new ArrayList<>();
 //
 //        Total myTotals = total.valuesScrape();
@@ -24,16 +24,16 @@ public class Stock {
 
     private String symbol;
     private String value;
-    private String dayAmtChange;
-    private String dayPercentChange;
-    private int totalShares;
+    private String dayAmtChg;
+    private String dayPctChg;
+    private int totalShrs;
 
     public Stock(String symbol, String value, String dayAmtChange, String dayPercentChange, int totalShares) {
         this.symbol = symbol;
         this.value = value;
-        this.dayAmtChange = dayAmtChange;
-        this.dayPercentChange = dayPercentChange;
-        this.totalShares = totalShares;
+        this.dayAmtChg = dayAmtChange;
+        this.dayPctChg = dayPercentChange;
+        this.totalShrs = totalShares;
     }
 
 
@@ -45,15 +45,15 @@ public class Stock {
         return value;
     }
 
-    public String getDayAmtChange() {
-        return dayAmtChange;
+    public String getDayAmtChg() {
+        return dayAmtChg;
     }
 
-    public String getDayPercentChange() {
-        return dayPercentChange;
+    public String getDayPctChg() {
+        return dayPctChg;
     }
 
-    public int getTotalShares() {
-        return totalShares;
+    public int getTotalShrs() {
+        return totalShrs;
     }
 }

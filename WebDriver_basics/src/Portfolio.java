@@ -19,9 +19,9 @@ public class Portfolio {
         for(int i = 0; i < this.myStocks.size(); i++) {
             System.out.println(this.myStocks.get(i).getSymbol() + "     | " +
                                 this.myStocks.get(i).getValue() + "  | " +
-                                this.myStocks.get(i).getDayAmtChange() + "   | " +
-                                this.myStocks.get(i).getDayPercentChange() + "  | " +
-                                this.myStocks.get(i).getTotalShares());
+                                this.myStocks.get(i).getDayAmtChg() + "   | " +
+                                this.myStocks.get(i).getDayPctChg() + "  | " +
+                                this.myStocks.get(i).getTotalShrs());
         }
     }
 
