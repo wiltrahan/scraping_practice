@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Portfolio {
+public class PrintPortfolio {
 
     private ArrayList<Stock> myStocks;
     private ArrayList<Total> myTotalValue;
@@ -16,12 +16,12 @@ public class Portfolio {
     public void printPortfolio() {
         System.out.println("Dreaming...");
         System.out.println("SYMBOL | CURRENT | $DAYCHG | %DAYCHG | SHARES");
-        for(int i = 0; i < this.myStocks.size(); i++) {
-            System.out.println(this.myStocks.get(i).getSymbol() + "     | " +
-                                this.myStocks.get(i).getValue() + "  | " +
-                                this.myStocks.get(i).getDayAmtChg() + "   | " +
-                                this.myStocks.get(i).getDayPctChg() + "  | " +
-                                this.myStocks.get(i).getTotalShrs());
+        for (Stock myStock : this.myStocks) {
+            System.out.println(myStock.getSymbol() + "     | " +
+                    myStock.getValue() + "  | " +
+                    myStock.getDayAmtChg() + "   | " +
+                    myStock.getDayPctChg() + "  | " +
+                    myStock.getTotalShrs());
         }
     }
 
@@ -32,10 +32,10 @@ public class Portfolio {
 
         System.out.println("Totals...");
         System.out.println("Total Value | Day Gain | Total Gain");
-        for(int i = 0; i < this.myTotalValue.size(); i++) {
-            System.out.println(this.myTotalValue.get(i).getPortfolioTotal() + " |  " +
-                                this.myTotalValue.get(i).getPortfolioDayGain() + " |  " +
-                                this.myTotalValue.get(i).getPortfolioGainTotal());
+        for (Total aMyTotalValue : this.myTotalValue) {
+            System.out.println(aMyTotalValue.getPortfolioTotal() + " |  " +
+                    aMyTotalValue.getPortfolioDayGain() + " |  " +
+                    aMyTotalValue.getPortfolioGainTotal());
         }
 
     }

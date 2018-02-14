@@ -21,7 +21,7 @@ public class OpenAndScrape {
         openAndScrape.openSite();
         openAndScrape.login(username, password);
 
-        Portfolio port = new Portfolio();
+        PrintPortfolio port = new PrintPortfolio();
 
         //Total myTotals = openAndScrape.valuesScrape();
 

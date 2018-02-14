@@ -7,17 +7,6 @@ import java.util.List;
 
 public class DB {
 
-//    public static void main(String[] args) {
-//
-//        DB db = new DB();
-//        if(!db.open()) {
-//            System.out.println("Can't open DB");
-//            return;
-//        }
-//        db.createDB();
-//        db.close();
-//    }
-
     private ArrayList<Stock> myStocks;
     //private ArrayList<Total> myTotalValue;
 
@@ -25,20 +14,20 @@ public class DB {
         myStocks = new ArrayList<>(stock);
     }
 
-    public static final String DB_NAME = "portfolio.db";
-    public static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/" + DB_NAME;
+    private static final String DB_NAME = "portfolio.db";
+    private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/" + DB_NAME;
 
-    public static final String TABLE_STOCKS = "stocks";
-    public static final String COLUMN_STOCK_SYMBOL = "symbol";
-    public static final String COLUMN_STOCK_VALUE = "value";
-    public static final String COLUMN_STOCK_DAYAMTCHG = "dayAmtChg";
-    public static final String COLUMN_STOCK_DAYPCTCHG = "dayPctChg";
-    public static final String COLUMN_STOCK_TOTALSHRS = "totalShrs";
+    private static final String TABLE_STOCKS = "stocks";
+    private static final String COLUMN_STOCK_SYMBOL = "symbol";
+    private static final String COLUMN_STOCK_VALUE = "value";
+    private static final String COLUMN_STOCK_DAYAMTCHG = "dayAmtChg";
+    private static final String COLUMN_STOCK_DAYPCTCHG = "dayPctChg";
+    private static final String COLUMN_STOCK_TOTALSHRS = "totalShrs";
 
-    public static final String TABLE_TOTALS = "totals";
-    public static final String COLUMN_TOTAL_PORTFOLIO = "portfolioTotal";
-    public static final String COLUMN_TOTAL_DAYGAIN = "portfolioDayGain";
-    public static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
+    private static final String TABLE_TOTALS = "totals";
+    private static final String COLUMN_TOTAL_PORTFOLIO = "portfolioTotal";
+    private static final String COLUMN_TOTAL_DAYGAIN = "portfolioDayGain";
+    private static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
 
     private Connection conn;
 
@@ -65,13 +54,11 @@ public class DB {
         }
     }
 
-    public boolean open() {
+    public void open() {
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
-            return true;
         } catch(SQLException e) {
             System.out.println("Couldn't connect to database: " + e.getMessage());
-            return false;
         }
     }
 
@@ -89,20 +76,20 @@ public class DB {
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement statement = conn.createStatement();
-            for(int i = 0; i < this.myStocks.size(); i++) {
+            for (Stock myStock : this.myStocks) {
                 statement.execute("INSERT INTO " + TABLE_STOCKS +
-                                        " (" + COLUMN_STOCK_SYMBOL + ", " +
-                                                COLUMN_STOCK_VALUE + ", " +
-                                                COLUMN_STOCK_DAYAMTCHG + ", " +
-                                                COLUMN_STOCK_DAYPCTCHG + ", " +
-                                                COLUMN_STOCK_TOTALSHRS +
-                                        ") " +
-                                        "VALUES('" + this.myStocks.get(i).getSymbol() + "', '" +
-                                                     this.myStocks.get(i).getValue() + "', '" +
-                                                     this.myStocks.get(i).getDayAmtChg() + "', '" +
-                                                     this.myStocks.get(i).getDayPctChg() + "', '" +
-                                                     this.myStocks.get(i).getTotalShrs() + "')"
-                                    );
+                        " (" + COLUMN_STOCK_SYMBOL + ", " +
+                        COLUMN_STOCK_VALUE + ", " +
+                        COLUMN_STOCK_DAYAMTCHG + ", " +
+                        COLUMN_STOCK_DAYPCTCHG + ", " +
+                        COLUMN_STOCK_TOTALSHRS +
+                        ") " +
+                        "VALUES('" + myStock.getSymbol() + "', '" +
+                        myStock.getValue() + "', '" +
+                        myStock.getDayAmtChg() + "', '" +
+                        myStock.getDayPctChg() + "', '" +
+                        myStock.getTotalShrs() + "')"
+                );
             }
         } catch (SQLException e) {
             System.out.println("Could not insert data: " + e.getMessage());
