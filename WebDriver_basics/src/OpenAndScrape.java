@@ -47,10 +47,10 @@ public class OpenAndScrape {
         db.createDB();
         db.open();
 
-        db.totalsList(totalPortfolio);
-        db.dbInsertTotals();
-
         db.portfolioList(stockPortfolio);
+
+        db.totalsList(totalPortfolio);
+
         db.dbInsertStocks();
 
         db.close();

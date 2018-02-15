@@ -23,7 +23,7 @@ public class DB {
     private static final String DB_NAME = "portfolio.db";
     private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/" + DB_NAME;
 
-    private static final String TABLE_STOCKS = "stocks";
+    //private static final String TABLE_STOCKS = "stocks";
     private static final String COLUMN_STOCK_SYMBOL = "symbol";
     private static final String COLUMN_STOCK_VALUE = "value";
     private static final String COLUMN_STOCK_DAYAMTCHG = "dayAmtChg";
@@ -48,13 +48,16 @@ public class DB {
                                        COLUMN_STOCK_VALUE + " text, " +
                                        COLUMN_STOCK_DAYAMTCHG + " text, " +
                                        COLUMN_STOCK_DAYPCTCHG + " text, " +
-                                       COLUMN_STOCK_TOTALSHRS + " text" +
-                                ")");
-            statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_TOTALS +
-                                " (" + COLUMN_TOTAL_PORTFOLIO + " text, " +
+                                       COLUMN_STOCK_TOTALSHRS + " text, " +
+                                       COLUMN_TOTAL_PORTFOLIO + " text, " +
                                        COLUMN_TOTAL_DAYGAIN + " text, " +
                                        COLUMN_TOTAL_GAINTOTAL + " text" +
                                 ")");
+//            statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_TOTALS +
+//                                " (" + COLUMN_TOTAL_PORTFOLIO + " text, " +
+//                                       COLUMN_TOTAL_DAYGAIN + " text, " +
+//                                       COLUMN_TOTAL_GAINTOTAL + " text" +
+//                                ")");
 
         } catch (SQLException e) {
             System.out.println("Couldn't create DB: " + e.getMessage());
@@ -97,20 +100,11 @@ public class DB {
                         myStock.getDayAmtChg() + "', '" +
                         myStock.getDayPctChg() + "', '" +
                         myStock.getTotalShrs() + "')"
+
                 );
             }
-        } catch (SQLException e) {
-            System.out.println("Could not insert data: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
-
-    public void dbInsertTotals() {
-        try {
-            conn = DriverManager.getConnection(CONNECTION_STRING);
-            Statement statement = conn.createStatement();
             for (Total myTotal : this.myTotals) {
-                statement.execute("INSERT INTO " + TABLE_TOTALS +
+                statement.execute("INSERT INTO " + "'" + CURRENT_TIME + "'" +
                         " (" + COLUMN_TOTAL_PORTFOLIO + ", " +
                         COLUMN_TOTAL_DAYGAIN + ", " +
                         COLUMN_TOTAL_GAINTOTAL +
@@ -120,10 +114,32 @@ public class DB {
                         myTotal.getPortfolioGainTotal() + "')"
                 );
             }
-        } catch (SQLException e) {
-            System.out.println("Could not insert TOTALS data: " + e.getMessage());
-            e.printStackTrace();
 
+        } catch (SQLException e) {
+            System.out.println("Could not insert data: " + e.getMessage());
+            e.printStackTrace();
         }
     }
+
+//    public void dbInsertTotals() {
+//        try {
+//            conn = DriverManager.getConnection(CONNECTION_STRING);
+//            Statement statement = conn.createStatement();
+//            for (Total myTotal : this.myTotals) {
+//                statement.execute("INSERT INTO " + TABLE_TOTALS +
+//                        " (" + COLUMN_TOTAL_PORTFOLIO + ", " +
+//                        COLUMN_TOTAL_DAYGAIN + ", " +
+//                        COLUMN_TOTAL_GAINTOTAL +
+//                        ") " +
+//                        "VALUES('" + myTotal.getPortfolioTotal() + "', '" +
+//                        myTotal.getPortfolioDayGain() + "', '" +
+//                        myTotal.getPortfolioGainTotal() + "')"
+//                );
+//            }
+//        } catch (SQLException e) {
+//            System.out.println("Could not insert TOTALS data: " + e.getMessage());
+//            e.printStackTrace();
+//
+//        }
+//    }
 }
