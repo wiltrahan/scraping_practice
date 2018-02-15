@@ -2,7 +2,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class DB {
@@ -33,13 +35,15 @@ public class DB {
     private static final String COLUMN_TOTAL_DAYGAIN = "portfolioDayGain";
     private static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
 
+    public static final String CURRENT_TIME = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
+
     private Connection conn;
 
-    private void createDB() {
+    public void createDB() {
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement statement = conn.createStatement();
-            statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_STOCKS +
+            statement.execute("CREATE TABLE IF NOT EXISTS " + "'" + CURRENT_TIME + "'" +
                                 " (" + COLUMN_STOCK_SYMBOL + " text, " +
                                        COLUMN_STOCK_VALUE + " text, " +
                                        COLUMN_STOCK_DAYAMTCHG + " text, " +
@@ -81,7 +85,7 @@ public class DB {
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement statement = conn.createStatement();
             for (Stock myStock : this.myStocks) {
-                statement.execute("INSERT INTO " + TABLE_STOCKS +
+                statement.execute("INSERT INTO " + "'" + CURRENT_TIME + "'" +
                         " (" + COLUMN_STOCK_SYMBOL + ", " +
                         COLUMN_STOCK_VALUE + ", " +
                         COLUMN_STOCK_DAYAMTCHG + ", " +

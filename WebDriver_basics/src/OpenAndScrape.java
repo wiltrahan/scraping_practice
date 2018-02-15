@@ -44,6 +44,7 @@ public class OpenAndScrape {
         port.printPortfolio();
 
         DB db = new DB();
+        db.createDB();
         db.open();
 
         db.totalsList(totalPortfolio);
