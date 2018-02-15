@@ -8,10 +8,14 @@ import java.util.List;
 public class DB {
 
     private ArrayList<Stock> myStocks;
-    //private ArrayList<Total> myTotalValue;
+    private ArrayList<Total> myTotals;
 
     public void portfolioList(List<Stock>stock) {
         myStocks = new ArrayList<>(stock);
+    }
+
+    public void totalsList(List<Total>total) {
+        myTotals = new ArrayList<>(total);
     }
 
     private static final String DB_NAME = "portfolio.db";
@@ -72,7 +76,7 @@ public class DB {
         }
     }
 
-    public void dbInsert() {
+    public void dbInsertStocks() {
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement statement = conn.createStatement();
@@ -93,6 +97,27 @@ public class DB {
             }
         } catch (SQLException e) {
             System.out.println("Could not insert data: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    public void dbInsertTotals() {
+        try {
+            conn = DriverManager.getConnection(CONNECTION_STRING);
+            Statement statement = conn.createStatement();
+            for (Total myTotal : this.myTotals) {
+                statement.execute("INSERT INTO " + TABLE_TOTALS +
+                        " (" + COLUMN_TOTAL_PORTFOLIO + ", " +
+                        COLUMN_TOTAL_DAYGAIN + ", " +
+                        COLUMN_TOTAL_GAINTOTAL +
+                        ") " +
+                        "VALUES('" + myTotal.getPortfolioTotal() + "', '" +
+                        myTotal.getPortfolioDayGain() + "', '" +
+                        myTotal.getPortfolioGainTotal() + "')"
+                );
+            }
+        } catch (SQLException e) {
+            System.out.println("Could not insert TOTALS data: " + e.getMessage());
             e.printStackTrace();
 
         }

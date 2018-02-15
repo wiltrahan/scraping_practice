@@ -10,7 +10,7 @@ public class OpenAndScrape {
 
     private WebDriver driver = new FirefoxDriver();
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, InterruptedException {
         Personal personal = new Personal();
         String username = personal.getUsername();
         String password = personal.getPassword();
@@ -22,17 +22,19 @@ public class OpenAndScrape {
         openAndScrape.login(username, password);
 
         PrintPortfolio port = new PrintPortfolio();
+        Thread.sleep(10000);
 
-        //Total myTotals = openAndScrape.valuesScrape();
+        Total myTotals = openAndScrape.valuesScrape();
 
-//        List<Total> totalPortfolio = new ArrayList<>();
-//
-//        totalPortfolio.add(myTotals);
-//        port.myTotals(totalPortfolio);
-//        port.printTotals();
+        List<Total> totalPortfolio = new ArrayList<>();
+
+        totalPortfolio.add(myTotals);
+        port.myTotals(totalPortfolio);
+        port.printTotals();
 
         List<Stock> stockPortfolio = new ArrayList<>();
 
+        Thread.sleep(4000);
         for (int i = 1; i <= 10; i++) {
             Stock stock = openAndScrape.stockScrape(i);
             stockPortfolio.add(stock);
@@ -43,14 +45,20 @@ public class OpenAndScrape {
 
         DB db = new DB();
         db.open();
+
+        db.totalsList(totalPortfolio);
+        db.dbInsertTotals();
+
         db.portfolioList(stockPortfolio);
-        db.dbInsert();
+        db.dbInsertStocks();
+
         db.close();
     }
 
     private void openSite() {
         driver.get("https://finance.yahoo.com/portfolios");
         try {
+            Thread.sleep(3000);
             driver.findElement(By.xpath("/html/body/div[2]/div[1]/header/section/div[2]/a")).click();
         } catch (Exception e) {
             System.out.println("Something went wrong " + e.getMessage());
@@ -97,12 +105,12 @@ public class OpenAndScrape {
         return new Stock(symbol, value, dayAmtChg, dayPctChg, totalShrs);
     }
 
-//    private Total valuesScrape() {
-//        String portfolioTotal = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[1]")).getText();
-//        String dayGain = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[2]/span")).getText();
-//        String totalGain = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[3]/span")).getText();
-//
-//        return new Total(portfolioTotal, dayGain, totalGain);
-//    }
+    private Total valuesScrape() {
+        String portfolioTotal = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[1]")).getText();
+        String dayGain = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[2]/span")).getText();
+        String totalGain = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/header/div[1]/div[2]/p[3]/span")).getText();
+
+        return new Total(portfolioTotal, dayGain, totalGain);
+    }
 }
 
