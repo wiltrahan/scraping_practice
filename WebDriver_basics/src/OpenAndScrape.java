@@ -11,6 +11,8 @@ public class OpenAndScrape {
     private WebDriver driver = new FirefoxDriver();
 
     public static void main(String[] args) throws SQLException, InterruptedException {
+
+        //gets username/password
         Personal personal = new Personal();
         String username = personal.getUsername();
         String password = personal.getPassword();
@@ -21,16 +23,14 @@ public class OpenAndScrape {
         openAndScrape.openSite();
         openAndScrape.login(username, password);
 
-        PrintPortfolio port = new PrintPortfolio();
-        Thread.sleep(10000);
+        //PrintPortfolio port = new PrintPortfolio();
+        //Thread.sleep(4000);
 
-        Total myTotals = openAndScrape.valuesScrape();
+//        Total myTotals = openAndScrape.valuesScrape();
+//
+//        List<Total> totalPortfolio = new ArrayList<>();
 
-        List<Total> totalPortfolio = new ArrayList<>();
 
-        totalPortfolio.add(myTotals);
-        port.myTotals(totalPortfolio);
-        port.printTotals();
 
         List<Stock> stockPortfolio = new ArrayList<>();
 
@@ -40,8 +40,18 @@ public class OpenAndScrape {
             stockPortfolio.add(stock);
         }
 
-        port.portfolioList(stockPortfolio);
-        port.printPortfolio();
+        Total myTotals = openAndScrape.valuesScrape();
+
+        List<Total> totalPortfolio = new ArrayList<>();
+        totalPortfolio.add(myTotals);
+
+        //port.myTotals(totalPortfolio);
+
+        //port.printTotals();
+
+        //port.portfolioList(stockPortfolio);
+
+        //port.printPortfolio();
 
         DB db = new DB();
         db.createDB();
