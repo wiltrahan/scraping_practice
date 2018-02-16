@@ -35,7 +35,7 @@ public class DB {
     private static final String COLUMN_TOTAL_DAYGAIN = "portfolioDayGain";
     private static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
 
-    public static final String CURRENT_TIME = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
+    private static final String CURRENT_TIME = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
 
     private Connection conn;
 
