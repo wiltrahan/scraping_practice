@@ -19,7 +19,7 @@ public class OpenAndScrape {
         System.setProperty("webdriver.gecko.driver", "/Users/twilorip/Desktop/webDrivers/firefox/geckodriver");
 
         OpenAndScrape openAndScrape = new OpenAndScrape();
-        openAndScrape.openSite();
+        //openAndScrape.openSite();
         openAndScrape.login(username, password);
 
         //PrintPortfolio port = new PrintPortfolio();
@@ -66,16 +66,20 @@ public class OpenAndScrape {
     }
 
     private void openSite() {
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://finance.yahoo.com/portfolios");
+
         try {
-            Thread.sleep(3000);
+            //Thread.sleep(3000);
             driver.findElement(By.xpath("/html/body/div[2]/div[1]/header/section/div[2]/a")).click();
+
         } catch (Exception e) {
             System.out.println("Something went wrong " + e.getMessage());
         }
     }
 
     private void login(String username, String password) {
+        driver.get("https://login.yahoo.com/config/login?.done=https%3A%2F%2Ffinance.yahoo.com%2Fportfolios&.intl=us&.lang=en-US&.src=finance");
         try {
             driver.findElement(By.id("login-username")).sendKeys(username);
             driver.findElement(By.id("login-signin")).click();
