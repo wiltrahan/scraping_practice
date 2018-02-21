@@ -29,8 +29,6 @@ public class OpenAndScrape {
 //
 //        List<Total> totalPortfolio = new ArrayList<>();
 
-
-
         List<Stock> stockPortfolio = new ArrayList<>();
 
         Thread.sleep(4000);
@@ -65,18 +63,18 @@ public class OpenAndScrape {
         db.close();
     }
 
-    private void openSite() {
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://finance.yahoo.com/portfolios");
-
-        try {
-            //Thread.sleep(3000);
-            driver.findElement(By.xpath("/html/body/div[2]/div[1]/header/section/div[2]/a")).click();
-
-        } catch (Exception e) {
-            System.out.println("Something went wrong " + e.getMessage());
-        }
-    }
+//    private void openSite() {
+//        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.get("https://finance.yahoo.com/portfolios");
+//
+//        try {
+//            //Thread.sleep(3000);
+//            driver.findElement(By.xpath("/html/body/div[2]/div[1]/header/section/div[2]/a")).click();
+//
+//        } catch (Exception e) {
+//            System.out.println("Something went wrong " + e.getMessage());
+//        }
+//    }
 
     private void login(String username, String password) {
         driver.get("https://login.yahoo.com/config/login?.done=https%3A%2F%2Ffinance.yahoo.com%2Fportfolios&.intl=us&.lang=en-US&.src=finance");
