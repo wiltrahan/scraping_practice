@@ -27,10 +27,12 @@ public class QueryDB {
             Statement stmt = conn.createStatement();
             ResultSet rs;
 
-            rs = stmt.executeQuery("SELECT * FROM " + "'" + DATE + "'" );
+            //rs = stmt.executeQuery("SELECT * FROM " + "'" + DATE + "'" );
+            rs = stmt.executeQuery("SELECT name FROM sqlite_master WHERE type = 'table'");
             while(rs.next()) {
-                String symbol = rs.getString("symbol");
-                System.out.println(symbol);
+                //String symbol = rs.getString("symbol");
+                //String table = rs.getMetaData().getColumnName(1);
+                System.out.println(rs.getString(1));
             }
 
         } catch (SQLException e) {
