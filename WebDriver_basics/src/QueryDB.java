@@ -1,4 +1,6 @@
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class QueryDB {
 
@@ -20,8 +22,14 @@ public class QueryDB {
 
     private static Connection conn;
 
-    public static void main(String[] args) {
+    List<String>dates;
 
+    public static void main(String[] args) {
+        tableQuery();
+    }
+
+    public static void tableQuery() {
+        List<String> dates = new ArrayList<>();
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement stmt = conn.createStatement();
@@ -30,15 +38,16 @@ public class QueryDB {
             //rs = stmt.executeQuery("SELECT * FROM " + "'" + DATE + "'" );
             rs = stmt.executeQuery("SELECT name FROM sqlite_master WHERE type = 'table'");
             while(rs.next()) {
-                //String symbol = rs.getString("symbol");
-                //String table = rs.getMetaData().getColumnName(1);
+                dates.add(rs.getString(1));
                 System.out.println(rs.getString(1));
+                //System.out.println(dates.size());
             }
 
         } catch (SQLException e) {
             System.out.println("So sorry: " + e.getMessage());
             e.printStackTrace();
         }
-
     }
+
+    
 }
