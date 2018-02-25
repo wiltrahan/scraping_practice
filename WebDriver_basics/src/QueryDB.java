@@ -18,7 +18,7 @@ public class QueryDB {
     private static final String COLUMN_TOTAL_PORTFOLIO = "portfolioTotal";
     private static final String COLUMN_TOTAL_DAYGAIN = "portfolioDayGain";
     private static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
-    public static final String DATE = "02/22/2018 15:32:31";
+    //public static final String DATE = "02/22/2018 15:32:31";
 
     private static Connection conn;
 
@@ -47,7 +47,8 @@ public class QueryDB {
             System.out.println("So sorry: " + e.getMessage());
             e.printStackTrace();
         }
-        getStocks(dates);
+            //getStocks(dates);
+            getTotals(dates);
     }
 
 
@@ -56,27 +57,61 @@ public class QueryDB {
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement stmt = conn.createStatement();
-            ResultSet rs = null;
+            ResultSet rs;
 
             for(String date : dates) {
-                System.out.println("Date " + date);
+                System.out.println(date);
                 rs = stmt.executeQuery("SELECT * FROM " + "'" + date + "'" + " WHERE" + " symbol " + "IS NOT NULL");
                 while (rs.next()) {
-                    System.out.println(rs.getString("symbol") + " " + rs.getString("value"));
-                    //System.out.println(rs.getString("value"));
-
+                    //String symbol = rs.getString("symbol");
+                    String symbol = rs.getString(COLUMN_STOCK_SYMBOL);
+                    String value = rs.getString(COLUMN_STOCK_VALUE);
+                    String dayAmtChg = rs.getString(COLUMN_STOCK_DAYAMTCHG);
+                    String dayPctChg = rs.getString(COLUMN_STOCK_DAYPCTCHG);
+                    String totalShrs = rs.getString(COLUMN_STOCK_TOTALSHRS);
+                    System.out.println(symbol + " " + value + " " + dayAmtChg + " " + dayPctChg + " " + totalShrs);
                 }
+                System.out.println();
             }
-            rs.close();
+
+            //return new Stock(symbol, value);
+            //rs.close();
             conn.close();
 
         } catch (SQLException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Stocks Error: " + e.getMessage());
             e.printStackTrace();
         }
 
+    }
 
+    private static void getTotals(List<String>dates) {
+        try{
+            conn = DriverManager.getConnection(CONNECTION_STRING);
+            Statement stmt = conn.createStatement();
+            ResultSet rs;
 
+            for(String date : dates) {
+                System.out.println(date + "???");
+                rs = stmt.executeQuery("SELECT " + "portfolioTotal" + ", " +
+                                                        "portfolioDayGain "  +
+                                                        "FROM " + "'" + date + "'" +
+                                                        "WHERE " + "portfolioTotal " + "IS NOT NULL");
+                while (rs.next()) {
+                    String total = rs.getString(COLUMN_TOTAL_PORTFOLIO);
+                    String dayGain = rs.getString(COLUMN_TOTAL_DAYGAIN);
+                    //String totalGain = rs.getString(COLUMN_TOTAL_GAINTOTAL);
+                    System.out.println(total + " " + dayGain);
+                }
+                System.out.println();
+            }
+            //rs.close();
+            conn.close();
+
+        } catch (SQLException e) {
+            System.out.println("Totals Error: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
 }

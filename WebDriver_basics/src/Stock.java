@@ -14,6 +14,10 @@ public class Stock {
         this.totalShrs = totalShares;
     }
 
+    Stock(String symbol, String value) {
+        this.symbol = symbol;
+        this.value = value;
+    }
 
     public String getSymbol() {
         return symbol;
