@@ -22,13 +22,13 @@ public class QueryDB {
 
     private static Connection conn;
 
-    List<String>dates;
+    //List<String>dates = new ArrayList<>();
 
     public static void main(String[] args) {
-        tableQuery();
+        getTables();
     }
 
-    public static void tableQuery() {
+    private static void getTables() {
         List<String> dates = new ArrayList<>();
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
@@ -39,7 +39,7 @@ public class QueryDB {
             rs = stmt.executeQuery("SELECT name FROM sqlite_master WHERE type = 'table'");
             while(rs.next()) {
                 dates.add(rs.getString(1));
-                System.out.println(rs.getString(1));
+                //System.out.println(rs.getString(1));
                 //System.out.println(dates.size());
             }
 
@@ -47,7 +47,36 @@ public class QueryDB {
             System.out.println("So sorry: " + e.getMessage());
             e.printStackTrace();
         }
+        getStocks(dates);
     }
 
-    
+
+    private static void getStocks(List<String>dates) {
+
+        try{
+            conn = DriverManager.getConnection(CONNECTION_STRING);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = null;
+
+            for(String date : dates) {
+                System.out.println("Date " + date);
+                rs = stmt.executeQuery("SELECT * FROM " + "'" + date + "'" + " WHERE" + " symbol " + "IS NOT NULL");
+                while (rs.next()) {
+                    System.out.println(rs.getString("symbol") + " " + rs.getString("value"));
+                    //System.out.println(rs.getString("value"));
+
+                }
+            }
+            rs.close();
+            conn.close();
+
+        } catch (SQLException e) {
+            System.out.println("Error: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+
+
+    }
+
 }

@@ -30,7 +30,7 @@
       <file leaf-file-name="OpenAndScrape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1168">
+            <state relative-caret-position="580">
               <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -81,8 +81,8 @@
       <file leaf-file-name="DB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-780">
-              <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+            <state relative-caret-position="308">
+              <caret line="106" column="33" lean-forward="false" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#376#377#0" expanded="true" />
@@ -100,13 +100,24 @@
       <file leaf-file-name="QueryDB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QueryDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+            <state relative-caret-position="388">
+              <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1167#1168#0" expanded="true" />
-                <marker date="1519587859354" expanded="true" signature="1528:1579" ph="SELECT name sqlite_master" />
+                <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <marker date="1519589611926" expanded="true" signature="1549:1600" ph="SELECT name sqlite_master" />
+                <marker date="1519589611926" expanded="true" signature="2330:2343" ph="SELECT * FRO... " />
+                <marker date="1519589611926" expanded="true" signature="2330:2344" ph="SELECT * FRO... " />
+                <marker date="1519589611926" expanded="true" signature="2330:2347" ph="SELECT * FRO... " />
+                <marker date="1519589611926" expanded="true" signature="2330:2363" ph="SELECT * FRO... missingValue" />
+                <marker date="1519589611926" expanded="true" signature="2330:2374" ph="SELECT * FRO... missingValue" />
+                <marker date="1519589611926" expanded="true" signature="2330:2377" ph="SELECT * FRO... missingValue" />
+                <marker date="1519589611926" expanded="true" signature="2330:2379" ph="SELECT * FRO... missingValue" />
+                <marker date="1519589611926" expanded="true" signature="2330:2386" ph="SELECT * FRO... missingValue" />
+                <marker date="1519589611926" expanded="true" signature="2330:2387" ph="SELECT * FRO... missingValue" />
+                <marker date="1519589611926" expanded="true" signature="2330:2403" ph="SELECT * FRO... missingValue" />
+                <marker date="1519589611926" expanded="true" signature="2330:2405" ph="SELECT * FRO... " />
               </folding>
             </state>
           </provider>
@@ -173,10 +184,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="29" />
+    <option name="x" value="68" />
     <option name="y" value="23" />
     <option name="width" value="1375" />
-    <option name="height" value="791" />
+    <option name="height" value="836" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -472,20 +483,20 @@
       <workItem from="1519173336775" duration="10392000" />
       <workItem from="1519420303561" duration="138000" />
       <workItem from="1519420936932" duration="16000" />
-      <workItem from="1519489798820" duration="6334000" />
+      <workItem from="1519489798820" duration="8091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27050000" />
+    <option name="totallyTimeSpent" value="28807000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="29" y="23" width="1375" height="791" extended-state="0" />
+    <frame x="68" y="23" width="1375" height="836" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32702702" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32614943" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -828,21 +839,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screenshot.png" />
     <entry file="file://$PROJECT_DIR$/demoSchema.txt" />
-    <entry file="file://$PROJECT_DIR$/src/Total.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrintPortfolio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -853,6 +849,17 @@
             <element signature="e#263#264#0" expanded="false" />
             <element signature="e#308#309#0" expanded="false" />
             <element signature="e#361#362#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1714#1745#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -876,10 +883,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Total.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/front/jsp/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+        <state relative-caret-position="308">
+          <caret line="106" column="33" lean-forward="false" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#376#377#0" expanded="true" />
@@ -893,34 +923,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/front/jsp/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OpenAndScrape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1168">
-          <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1714#1745#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QueryDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+        <state relative-caret-position="388">
+          <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <marker date="1519587859354" expanded="true" signature="1528:1579" ph="SELECT name sqlite_master" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <marker date="1519589611926" expanded="true" signature="1549:1600" ph="SELECT name sqlite_master" />
+            <marker date="1519589611926" expanded="true" signature="2330:2343" ph="SELECT * FRO... " />
+            <marker date="1519589611926" expanded="true" signature="2330:2344" ph="SELECT * FRO... " />
+            <marker date="1519589611926" expanded="true" signature="2330:2347" ph="SELECT * FRO... " />
+            <marker date="1519589611926" expanded="true" signature="2330:2363" ph="SELECT * FRO... missingValue" />
+            <marker date="1519589611926" expanded="true" signature="2330:2374" ph="SELECT * FRO... missingValue" />
+            <marker date="1519589611926" expanded="true" signature="2330:2377" ph="SELECT * FRO... missingValue" />
+            <marker date="1519589611926" expanded="true" signature="2330:2379" ph="SELECT * FRO... missingValue" />
+            <marker date="1519589611926" expanded="true" signature="2330:2386" ph="SELECT * FRO... missingValue" />
+            <marker date="1519589611926" expanded="true" signature="2330:2387" ph="SELECT * FRO... missingValue" />
+            <marker date="1519589611926" expanded="true" signature="2330:2403" ph="SELECT * FRO... missingValue" />
+            <marker date="1519589611926" expanded="true" signature="2330:2405" ph="SELECT * FRO... " />
           </folding>
         </state>
       </provider>
