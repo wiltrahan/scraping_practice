@@ -1,3 +1,4 @@
+package com.test;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -86,7 +87,7 @@ public class Querydb {
 
     }
 
-    private static void getTotals(List<String>dates) {
+    public static void getTotals(List<String>dates) {
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement stmt = conn.createStatement();
