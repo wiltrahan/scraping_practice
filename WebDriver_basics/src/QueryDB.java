@@ -1,8 +1,9 @@
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QueryDB {
+public class Querydb {
 
     private static final String DB_NAME = "portfolio.db";
     private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/" + DB_NAME;
@@ -92,7 +93,7 @@ public class QueryDB {
             ResultSet rs;
 
             for(String date : dates) {
-                System.out.println(date + "???");
+                System.out.println(date);
                 rs = stmt.executeQuery("SELECT " + "portfolioTotal" + ", " +
                                                         "portfolioDayGain "  +
                                                         "FROM " + "'" + date + "'" +
@@ -100,7 +101,6 @@ public class QueryDB {
                 while (rs.next()) {
                     String total = rs.getString(COLUMN_TOTAL_PORTFOLIO);
                     String dayGain = rs.getString(COLUMN_TOTAL_DAYGAIN);
-                    //String totalGain = rs.getString(COLUMN_TOTAL_GAINTOTAL);
                     System.out.println(total + " " + dayGain);
                 }
                 System.out.println();
