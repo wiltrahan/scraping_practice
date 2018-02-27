@@ -1,4 +1,4 @@
-package com.test;
+package com.wiltrahan;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -24,13 +24,14 @@ public class Querydb {
 
     private static Connection conn;
 
-    //List<String>dates = new ArrayList<>();
+    //private ArrayList<Stock> totals = new ArrayList<>();
+
 
     public static void main(String[] args) {
         getTables();
     }
 
-    private static void getTables() {
+    public static void getTables() {
         List<String> dates = new ArrayList<>();
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
@@ -87,7 +88,7 @@ public class Querydb {
 
     }
 
-    public static void getTotals(List<String>dates) {
+    private static void getTotals(List<String> dates) {
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement stmt = conn.createStatement();
@@ -100,9 +101,12 @@ public class Querydb {
                                                         "FROM " + "'" + date + "'" +
                                                         "WHERE " + "portfolioTotal " + "IS NOT NULL");
                 while (rs.next()) {
+                    System.out.println("DATE2: " + date);
                     String total = rs.getString(COLUMN_TOTAL_PORTFOLIO);
                     String dayGain = rs.getString(COLUMN_TOTAL_DAYGAIN);
                     System.out.println(total + " " + dayGain);
+                    //toBrowser(total);
+
                 }
                 System.out.println();
             }
@@ -114,5 +118,13 @@ public class Querydb {
             e.printStackTrace();
         }
     }
+
+    //STUCK AT THIS POINT TRYING TO FIGURE OUT HOW TO GET STRINGS TO INDEX.JSP
+
+//    private static List<Stock> toBrowser() {
+//
+//    }
+
+
 
 }
