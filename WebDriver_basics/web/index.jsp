@@ -13,8 +13,6 @@
   </head>
   <body>
   <%
-    //com.wiltrahan.Querydb query = new com.wiltrahan.Querydb();
-
     Querydb.getTables();
   %>
       HI!!

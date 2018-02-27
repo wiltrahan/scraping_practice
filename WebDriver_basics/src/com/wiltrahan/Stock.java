@@ -1,3 +1,5 @@
+package com.wiltrahan;
+
 public class Stock {
 
     private String symbol;

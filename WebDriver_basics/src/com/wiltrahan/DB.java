@@ -1,3 +1,4 @@
+package com.wiltrahan;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -61,7 +62,7 @@ public class DB {
 //                                ")");
 
         } catch (SQLException e) {
-            System.out.println("Couldn't create DB: " + e.getMessage());
+            System.out.println("Couldn't create com.wiltrahan.DB: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -126,7 +127,7 @@ public class DB {
 //        try {
 //            conn = DriverManager.getConnection(CONNECTION_STRING);
 //            Statement statement = conn.createStatement();
-//            for (Total myTotal : this.myTotals) {
+//            for (com.wiltrahan.Total myTotal : this.myTotals) {
 //                statement.execute("INSERT INTO " + TABLE_TOTALS +
 //                        " (" + COLUMN_TOTAL_PORTFOLIO + ", " +
 //                        COLUMN_TOTAL_DAYGAIN + ", " +

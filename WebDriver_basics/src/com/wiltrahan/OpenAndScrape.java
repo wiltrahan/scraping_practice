@@ -1,3 +1,5 @@
+package com.wiltrahan;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -22,12 +24,12 @@ public class OpenAndScrape {
         //openAndScrape.openSite();
         openAndScrape.login(username, password);
 
-        //PrintPortfolio port = new PrintPortfolio();
+        //com.wiltrahan.PrintPortfolio port = new com.wiltrahan.PrintPortfolio();
         //Thread.sleep(4000);
 
-//        Total myTotals = openAndScrape.valuesScrape();
+//        com.wiltrahan.Total myTotals = openAndScrape.valuesScrape();
 //
-//        List<Total> totalPortfolio = new ArrayList<>();
+//        List<com.wiltrahan.Total> totalPortfolio = new ArrayList<>();
 
         List<Stock> stockPortfolio = new ArrayList<>();
 

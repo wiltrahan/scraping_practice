@@ -24,7 +24,7 @@ public class Querydb {
 
     private static Connection conn;
 
-    //private ArrayList<Stock> totals = new ArrayList<>();
+    private ArrayList<Total> totals = new ArrayList<>();
 
 
     public static void main(String[] args) {
@@ -77,7 +77,7 @@ public class Querydb {
                 System.out.println();
             }
 
-            //return new Stock(symbol, value);
+            //return new com.wiltrahan.Stock(symbol, value);
             //rs.close();
             conn.close();
 
@@ -95,13 +95,12 @@ public class Querydb {
             ResultSet rs;
 
             for(String date : dates) {
-                System.out.println(date);
                 rs = stmt.executeQuery("SELECT " + "portfolioTotal" + ", " +
                                                         "portfolioDayGain "  +
                                                         "FROM " + "'" + date + "'" +
                                                         "WHERE " + "portfolioTotal " + "IS NOT NULL");
                 while (rs.next()) {
-                    System.out.println("DATE2: " + date);
+                    System.out.println(date);
                     String total = rs.getString(COLUMN_TOTAL_PORTFOLIO);
                     String dayGain = rs.getString(COLUMN_TOTAL_DAYGAIN);
                     System.out.println(total + " " + dayGain);
@@ -121,7 +120,7 @@ public class Querydb {
 
     //STUCK AT THIS POINT TRYING TO FIGURE OUT HOW TO GET STRINGS TO INDEX.JSP
 
-//    private static List<Stock> toBrowser() {
+//    private static List<com.wiltrahan.Stock> toBrowser() {
 //
 //    }
 

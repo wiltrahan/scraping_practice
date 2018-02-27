@@ -1,3 +1,4 @@
+package com.wiltrahan;
 
 public class Total {
 

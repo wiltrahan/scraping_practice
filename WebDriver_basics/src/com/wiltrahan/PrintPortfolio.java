@@ -1,3 +1,5 @@
+package com.wiltrahan;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +33,7 @@ public class PrintPortfolio {
         System.out.println("\n");
 
         System.out.println("Totals...");
-        System.out.println("Total Value | Day Gain | Total Gain");
+        System.out.println("com.wiltrahan.Total Value | Day Gain | com.wiltrahan.Total Gain");
         for (Total aMyTotalValue : this.myTotalValue) {
             System.out.println(aMyTotalValue.getPortfolioTotal() + " |  " +
                     aMyTotalValue.getPortfolioDayGain() + " |  " +
