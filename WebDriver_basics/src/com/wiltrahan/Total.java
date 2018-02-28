@@ -13,6 +13,11 @@ public class Total {
         this.portfolioGainTotal = portfolioGainTotal;
     }
 
+    Total(String portfolioTotal, String portfolioDayGain) {
+        this.portfolioTotal = portfolioTotal;
+        this.portfolioDayGain = portfolioDayGain;
+    }
+
     public String getPortfolioTotal() {
         return portfolioTotal;
     }

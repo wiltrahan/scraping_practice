@@ -24,7 +24,7 @@ public class Querydb {
 
     private static Connection conn;
 
-    private ArrayList<Total> totals = new ArrayList<>();
+    public static ArrayList<Total> totals = new ArrayList<>();
 
 
     public static void main(String[] args) {
@@ -92,7 +92,7 @@ public class Querydb {
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement stmt = conn.createStatement();
-            ResultSet rs;
+            ResultSet rs = null;
 
             for(String date : dates) {
                 rs = stmt.executeQuery("SELECT " + "portfolioTotal" + ", " +
@@ -104,18 +104,21 @@ public class Querydb {
                     String total = rs.getString(COLUMN_TOTAL_PORTFOLIO);
                     String dayGain = rs.getString(COLUMN_TOTAL_DAYGAIN);
                     System.out.println(total + " " + dayGain);
+                    //Total totalView = new Total(total, dayGain);
+                    totals.add(new Total(total, dayGain));
                     //toBrowser(total);
 
                 }
                 System.out.println();
             }
-            //rs.close();
+            rs.close();
             conn.close();
 
         } catch (SQLException e) {
             System.out.println("Totals Error: " + e.getMessage());
             e.printStackTrace();
         }
+
     }
 
     //STUCK AT THIS POINT TRYING TO FIGURE OUT HOW TO GET STRINGS TO INDEX.JSP
