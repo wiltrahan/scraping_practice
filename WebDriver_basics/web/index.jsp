@@ -15,20 +15,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <%
-    Querydb.getTables();
-    List<Total> totals = Querydb.totals;
-    Iterator<Total> iterator = totals.iterator();
-
-    while (iterator.hasNext()) {
-      System.out.println(iterator.next());
-    }
-  %>
-
-
-
-
-
 
 
   BYE
