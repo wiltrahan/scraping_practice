@@ -1,10 +1,7 @@
 package com.wiltrahan;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Querydb {
 
@@ -29,7 +26,7 @@ public class Querydb {
 
     private static ArrayList<String> dates = new ArrayList<>();
 
-    private static Map<String, Total> port = new HashMap<>();
+    private static LinkedHashMap port = new LinkedHashMap<String, Total>();
 
 
 
@@ -40,7 +37,7 @@ public class Querydb {
     //getTables called from scriplett, sets table date as the key, and the Total object as the value
     //then returns the map to the jsp file
 
-    public static Map<String, Total> getTables() throws ClassNotFoundException {
+    public static LinkedHashMap<String, Total> getTables() throws ClassNotFoundException {
         try{
             conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement stmt = conn.createStatement();
