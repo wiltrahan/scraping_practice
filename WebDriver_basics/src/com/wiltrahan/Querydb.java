@@ -2,7 +2,9 @@ package com.wiltrahan;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Querydb {
 
@@ -20,7 +22,6 @@ public class Querydb {
     private static final String COLUMN_TOTAL_PORTFOLIO = "portfolioTotal";
     private static final String COLUMN_TOTAL_DAYGAIN = "portfolioDayGain";
     private static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
-    //public static final String DATE = "02/22/2018 15:32:31";
 
     private static Connection conn;
 
@@ -28,20 +29,18 @@ public class Querydb {
 
     private static ArrayList<String> dates = new ArrayList<>();
 
-//    public Querydb(ArrayList<String> dates) {
-//        this.dates = dates;
-//    }
+    private static Map<String, Total> port = new HashMap<>();
+    
 
-    public Querydb() {
-    }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        Querydb querydb = new Querydb();
-        querydb.getTables();
-    }
 
-    public static List<Total> getTables() throws SQLException, ClassNotFoundException {
-        //List<String> dates = new ArrayList<>();
+        Querydb.getTables();
+    }
+    //getTables called from scriplett, sets table date as the key, and the Total object as the value
+    //then returns the map to the jsp file
+
+    public static Map<String, Total> getTables() throws ClassNotFoundException {
         try{
             conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement stmt = conn.createStatement();
@@ -50,22 +49,17 @@ public class Querydb {
             //rs = stmt.executeQuery("SELECT * FROM " + "'" + DATE + "'" );
             rs = stmt.executeQuery("SELECT name FROM sqlite_master WHERE type = 'table'");
             while(rs.next()) {
-                dates.add(rs.getString(1));
-                //System.out.println(rs.getString(1));
-                //System.out.println(dates.size());
+                //dates.add(rs.getString(1));
+                port.put(rs.getString(1), getTotals(rs.getString(1)));
             }
-            //return dates;
-            return getTotals();
-//        conn.close();
+            return port;
+
         } catch (SQLException e) {
             System.out.println("So sorry: " + e.getMessage());
             e.printStackTrace();
         }
-            //getStocks(dates);
-            //getTotals(dates);
 
-        return getTotals();
-
+        return null;
     }
 
     private static void getStocks(List<String>dates) {
@@ -101,52 +95,35 @@ public class Querydb {
 
     }
 
-    private static List<Total> getTotals() throws ClassNotFoundException {
+    private static Total getTotals(String date) {
         try{
             conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement stmt = conn.createStatement();
             ResultSet rs = null;
 
-            for(String date : dates) {
+            //for(String date : dates) {
                 rs = stmt.executeQuery("SELECT " + "portfolioTotal" + ", " +
                                                         "portfolioDayGain "  +
                                                         "FROM " + "'" + date + "'" +
                                                         "WHERE " + "portfolioTotal " + "IS NOT NULL");
-                while (rs.next()) {
+                //while (rs.next()) {
                     System.out.println(date);
                     String total = rs.getString(COLUMN_TOTAL_PORTFOLIO);
                     String dayGain = rs.getString(COLUMN_TOTAL_DAYGAIN);
                     System.out.println(total + " " + dayGain);
-                    //Total totalView = new Total(total, dayGain);
-                    totals.add(new Total(total, dayGain));
-                    //toBrowser(total);
+                    //totals.add(new Total(total, dayGain));
+                    return new Total(total, dayGain);
+                //}
 
-                }
-                System.out.println();
-            }
-            //rs.close();
-            //return totals;
+                //System.out.println();
+            //}
 
         } catch (SQLException e) {
             System.out.println("Totals Error: " + e.getMessage());
             e.printStackTrace();
         }
-        System.out.println(totals.size());
-        //printTest();
-        return totals;
 
+        return null;
     }
 
-//    private static void printTest() {
-//        System.out.println("TEST: " + totals.get(1).getPortfolioTotal());
-//    }
-
-    public static List<String> testStrings() {
-        List<String> work = new ArrayList<>();
-        work.add("Will");
-        work.add("This");
-        work.add("Work?");
-
-        return work;
-    }
 }
