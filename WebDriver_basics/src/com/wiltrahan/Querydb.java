@@ -7,7 +7,7 @@ import java.util.List;
 public class Querydb {
 
     private static final String DB_NAME = "portfolio.db";
-    private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/" + DB_NAME;
+    private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db" + DB_NAME;
 
     //private static final String TABLE_STOCKS = "stocks";
     private static final String COLUMN_STOCK_SYMBOL = "symbol";
@@ -35,15 +35,15 @@ public class Querydb {
     public Querydb() {
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
         Querydb querydb = new Querydb();
         querydb.getTables();
     }
 
-    public void getTables() throws SQLException {
+    public static List<Total> getTables() throws SQLException, ClassNotFoundException {
         //List<String> dates = new ArrayList<>();
         try{
-            conn = DriverManager.getConnection(CONNECTION_STRING);
+            conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement stmt = conn.createStatement();
             ResultSet rs;
 
@@ -55,7 +55,8 @@ public class Querydb {
                 //System.out.println(dates.size());
             }
             //return dates;
-
+            return getTotals();
+//        conn.close();
         } catch (SQLException e) {
             System.out.println("So sorry: " + e.getMessage());
             e.printStackTrace();
@@ -63,7 +64,7 @@ public class Querydb {
             //getStocks(dates);
             //getTotals(dates);
 
-        getTotals();
+        return getTotals();
 
     }
 
@@ -100,9 +101,9 @@ public class Querydb {
 
     }
 
-    public List<Total> getTotals() {
+    private static List<Total> getTotals() throws ClassNotFoundException {
         try{
-            conn = DriverManager.getConnection(CONNECTION_STRING);
+            conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement stmt = conn.createStatement();
             ResultSet rs = null;
 
@@ -124,19 +125,28 @@ public class Querydb {
                 System.out.println();
             }
             //rs.close();
-
+            //return totals;
 
         } catch (SQLException e) {
             System.out.println("Totals Error: " + e.getMessage());
             e.printStackTrace();
         }
         System.out.println(totals.size());
-        printTest();
+        //printTest();
         return totals;
 
     }
 
-    private void printTest() {
-        System.out.println("TEST: " + totals.get(1).getPortfolioTotal());
+//    private static void printTest() {
+//        System.out.println("TEST: " + totals.get(1).getPortfolioTotal());
+//    }
+
+    public static List<String> testStrings() {
+        List<String> work = new ArrayList<>();
+        work.add("Will");
+        work.add("This");
+        work.add("Work?");
+
+        return work;
     }
 }

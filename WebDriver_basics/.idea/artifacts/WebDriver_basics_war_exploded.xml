@@ -12,6 +12,7 @@
           <element id="library" level="project" name="sqlite-jdbc-3.21.0" />
           <element id="file-copy" path="$PROJECT_DIR$/libs/javax.servlet.jsp.jstl-1.2.1.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/libs/javax.servlet.jsp.jstl-api-1.2.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/sqlite-jdbc-3.21.0.jar" />
         </element>
       </element>
     </root>

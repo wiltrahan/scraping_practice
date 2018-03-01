@@ -27,57 +27,50 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="identifier.sqlite" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/test.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            <state relative-caret-position="390">
+              <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Querydb.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Querydb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Querydb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+            <state relative-caret-position="-125">
+              <caret line="45" column="133" lean-forward="false" selection-start-line="45" selection-start-column="133" selection-end-line="45" selection-end-column="133" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getStocks#0;class#Querydb#0" expanded="false" />
-                <element signature="e#5122#5123#0" expanded="true" />
-                <element signature="e#5202#5203#0" expanded="true" />
-                <marker date="1519871929254" expanded="true" signature="1858:1909" ph="SELECT name sqlite_master" />
-                <marker date="1519871929254" expanded="true" signature="2710:2783" ph="SELECT * FRO... missingValue" />
-                <marker date="1519871929254" expanded="true" signature="3993:4004" ph="SELECT 'port... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4019" ph="SELECT portf... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4024" ph="SELECT 'port... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4087" ph="SELECT 'port... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4098" ph="SELECT portf... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4103" ph="SELECT portf... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4108" ph="SELECT 'port... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4170" ph="SELECT 'port... " />
-                <marker date="1519871929254" expanded="true" signature="3993:4190" ph="SELECT portf... missingValue" />
-                <marker date="1519871929254" expanded="true" signature="3993:4191" ph="SELECT 'port... missingValue" />
-                <marker date="1519871929254" expanded="true" signature="3993:4256" ph="SELECT portf... missingValue" />
-                <marker date="1519871929254" expanded="true" signature="3993:4276" ph="SELECT portf... missingValue" />
-                <marker date="1519871929254" expanded="true" signature="3993:4293" ph="SELECT portf... missingValue" />
-                <marker date="1519871929254" expanded="true" signature="3993:4295" ph="SELECT 'port... missingValue" />
+                <marker date="1519929256248" expanded="true" signature="2000:2051" ph="SELECT name sqlite_master" />
+                <marker date="1519929256248" expanded="true" signature="2914:2987" ph="SELECT * FRO... missingValue" />
+                <marker date="1519929256248" expanded="true" signature="4303:4314" ph="SELECT 'port... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4329" ph="SELECT portf... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4334" ph="SELECT 'port... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4397" ph="SELECT 'port... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4408" ph="SELECT portf... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4413" ph="SELECT portf... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4418" ph="SELECT 'port... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4480" ph="SELECT 'port... " />
+                <marker date="1519929256248" expanded="true" signature="4303:4500" ph="SELECT portf... missingValue" />
+                <marker date="1519929256248" expanded="true" signature="4303:4501" ph="SELECT 'port... missingValue" />
+                <marker date="1519929256248" expanded="true" signature="4303:4566" ph="SELECT portf... missingValue" />
+                <marker date="1519929256248" expanded="true" signature="4303:4586" ph="SELECT portf... missingValue" />
+                <marker date="1519929256248" expanded="true" signature="4303:4603" ph="SELECT portf... missingValue" />
+                <marker date="1519929256248" expanded="true" signature="4303:4605" ph="SELECT 'port... missingValue" />
               </folding>
             </state>
           </provider>
@@ -86,7 +79,7 @@
       <file leaf-file-name="PrintPortfolio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/PrintPortfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
+            <state relative-caret-position="255">
               <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -228,8 +221,8 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/view_students.jsp" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/MvcDemoServlet.java" />
-        <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/Querydb.java" />
+        <option value="$PROJECT_DIR$/web/test.jsp" />
       </list>
     </option>
   </component>
@@ -253,9 +246,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
+    <option name="x" value="71" />
     <option name="y" value="23" />
-    <option name="width" value="1389" />
+    <option name="width" value="1204" />
     <option name="height" value="825" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -298,10 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,7 +302,24 @@
             <path>
               <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlite-jdbc-3.21.0.jar" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
@@ -322,10 +329,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
@@ -367,7 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Querydb">
+  <component name="RunManager" selected="GlassFish Server.GlassFish 4.1.2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -634,40 +644,49 @@
       <workItem from="1519773656997" duration="4664000" />
       <workItem from="1519857431783" duration="6383000" />
       <workItem from="1519865121065" duration="3255000" />
-      <workItem from="1519869668145" duration="2272000" />
+      <workItem from="1519869668145" duration="4207000" />
+      <workItem from="1519925983894" duration="4071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69426000" />
+    <option name="totallyTimeSpent" value="75432000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1389" height="825" extended-state="0" />
-    <editor active="true" />
+    <frame x="71" y="23" width="1204" height="825" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32406288" sideWeight="0.5026779" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47808218" sideWeight="0.5051163" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283721" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24831207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243243" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32328767" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66849315" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47671232" sideWeight="0.49488372" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16184112" sideWeight="0.7885154" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14457831" sideWeight="0.7885154" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43651626" sideWeight="0.2114846" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -820,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,6 +912,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletDemo.java" />
+    <entry file="jar://$PROJECT_DIR$/../../Beats/beats2/jstl-libs/javax.servlet.jsp.jstl-1.2.1.jar!/META-INF/sql-1_0-rt.tld" />
+    <entry file="file://$PROJECT_DIR$/web/view_students.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/MvcDemoServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/PrintPortfolio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Total.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -909,16 +943,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletDemo.java" />
-    <entry file="jar://$PROJECT_DIR$/../../Beats/beats2/jstl-libs/javax.servlet.jsp.jstl-1.2.1.jar!/META-INF/sql-1_0-rt.tld" />
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -930,62 +962,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view_students.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/MvcDemoServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/PrintPortfolio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Querydb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state relative-caret-position="-125">
+          <caret line="45" column="133" lean-forward="false" selection-start-line="45" selection-start-column="133" selection-end-line="45" selection-end-column="133" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getStocks#0;class#Querydb#0" expanded="false" />
-            <element signature="e#5122#5123#0" expanded="true" />
-            <element signature="e#5202#5203#0" expanded="true" />
-            <marker date="1519871929254" expanded="true" signature="1858:1909" ph="SELECT name sqlite_master" />
-            <marker date="1519871929254" expanded="true" signature="2710:2783" ph="SELECT * FRO... missingValue" />
-            <marker date="1519871929254" expanded="true" signature="3993:4004" ph="SELECT 'port... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4019" ph="SELECT portf... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4024" ph="SELECT 'port... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4087" ph="SELECT 'port... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4098" ph="SELECT portf... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4103" ph="SELECT portf... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4108" ph="SELECT 'port... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4170" ph="SELECT 'port... " />
-            <marker date="1519871929254" expanded="true" signature="3993:4190" ph="SELECT portf... missingValue" />
-            <marker date="1519871929254" expanded="true" signature="3993:4191" ph="SELECT 'port... missingValue" />
-            <marker date="1519871929254" expanded="true" signature="3993:4256" ph="SELECT portf... missingValue" />
-            <marker date="1519871929254" expanded="true" signature="3993:4276" ph="SELECT portf... missingValue" />
-            <marker date="1519871929254" expanded="true" signature="3993:4293" ph="SELECT portf... missingValue" />
-            <marker date="1519871929254" expanded="true" signature="3993:4295" ph="SELECT 'port... missingValue" />
+            <marker date="1519929256248" expanded="true" signature="2000:2051" ph="SELECT name sqlite_master" />
+            <marker date="1519929256248" expanded="true" signature="2914:2987" ph="SELECT * FRO... missingValue" />
+            <marker date="1519929256248" expanded="true" signature="4303:4314" ph="SELECT 'port... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4329" ph="SELECT portf... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4334" ph="SELECT 'port... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4397" ph="SELECT 'port... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4408" ph="SELECT portf... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4413" ph="SELECT portf... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4418" ph="SELECT 'port... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4480" ph="SELECT 'port... " />
+            <marker date="1519929256248" expanded="true" signature="4303:4500" ph="SELECT portf... missingValue" />
+            <marker date="1519929256248" expanded="true" signature="4303:4501" ph="SELECT 'port... missingValue" />
+            <marker date="1519929256248" expanded="true" signature="4303:4566" ph="SELECT portf... missingValue" />
+            <marker date="1519929256248" expanded="true" signature="4303:4586" ph="SELECT portf... missingValue" />
+            <marker date="1519929256248" expanded="true" signature="4303:4603" ph="SELECT portf... missingValue" />
+            <marker date="1519929256248" expanded="true" signature="4303:4605" ph="SELECT 'port... missingValue" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,6 +1064,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

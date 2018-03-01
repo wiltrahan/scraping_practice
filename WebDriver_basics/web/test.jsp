@@ -3,20 +3,20 @@
 <%@ page import="com.wiltrahan.Total" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.sql.SQLException" %>
-<%@ page import="static java.lang.Thread.*" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="static com.wiltrahan.Querydb.*" %>
+
 
 <%
-    Querydb querydb = new Querydb();
-    try {
-        querydb.getTables();
-    } catch (SQLException e) {
-        System.out.println("sorry: " + e.getMessage());
-        e.printStackTrace();
-    }
+    //Querydb querydb = new Querydb();
 
-//    List<Total> totals =
-    sleep(5000);
-    request.setAttribute("myTotals", querydb.getTotals());
+    //List<Total> totals = querydb.getTotals();
+    List<Total> totals = getTables();
+
+    List<String> workforme = testStrings();
+
+    request.setAttribute("myTotals", totals);
+    request.setAttribute("myWork", workforme);
 
 %>
 
@@ -24,8 +24,11 @@
     <body>
 
         <c:forEach var="tempTotals" items="${myTotals}">
-
             ${tempTotals.portfolioTotal}
+        </c:forEach>
+
+        <c:forEach var="pleaseWork" items="${myWork}">
+            ${pleaseWork}
         </c:forEach>
 
     <p>PLEASE WORK</p>
