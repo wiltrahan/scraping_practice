@@ -28,19 +28,19 @@ public class Querydb {
 
     private static ArrayList<String> dates = new ArrayList<>();
 
-    public Querydb(ArrayList<String> dates) {
-        this.dates = dates;
-    }
+//    public Querydb(ArrayList<String> dates) {
+//        this.dates = dates;
+//    }
 
     public Querydb() {
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Querydb querydb = new Querydb();
         querydb.getTables();
     }
 
-    public void getTables() {
+    public void getTables() throws SQLException {
         //List<String> dates = new ArrayList<>();
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
@@ -62,6 +62,7 @@ public class Querydb {
         }
             //getStocks(dates);
             //getTotals(dates);
+
         getTotals();
 
     }
@@ -122,15 +123,20 @@ public class Querydb {
                 }
                 System.out.println();
             }
-            rs.close();
-            conn.close();
+            //rs.close();
+
 
         } catch (SQLException e) {
             System.out.println("Totals Error: " + e.getMessage());
             e.printStackTrace();
         }
         System.out.println(totals.size());
+        printTest();
         return totals;
 
+    }
+
+    private void printTest() {
+        System.out.println("TEST: " + totals.get(1).getPortfolioTotal());
     }
 }

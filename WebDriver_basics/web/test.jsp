@@ -2,13 +2,22 @@
 <%@ page import="com.wiltrahan.Querydb" %>
 <%@ page import="com.wiltrahan.Total" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="static java.lang.Thread.*" %>
 
 <%
     Querydb querydb = new Querydb();
-    querydb.getTables();
-    List<Total> totals = querydb.getTotals();
+    try {
+        querydb.getTables();
+    } catch (SQLException e) {
+        System.out.println("sorry: " + e.getMessage());
+        e.printStackTrace();
+    }
 
-    request.setAttribute("myTotals", totals);
+//    List<Total> totals =
+    sleep(5000);
+    request.setAttribute("myTotals", querydb.getTotals());
+
 %>
 
 <html>
@@ -19,6 +28,7 @@
             ${tempTotals.portfolioTotal}
         </c:forEach>
 
+    <p>PLEASE WORK</p>
 
     </body>
 
