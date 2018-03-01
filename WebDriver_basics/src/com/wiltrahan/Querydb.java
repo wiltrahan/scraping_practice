@@ -26,13 +26,22 @@ public class Querydb {
 
     public static ArrayList<Total> totals = new ArrayList<>();
 
+    private static ArrayList<String> dates = new ArrayList<>();
 
-    public static void main(String[] args) {
-        getTables();
+    public Querydb(ArrayList<String> dates) {
+        this.dates = dates;
     }
 
-    public static void getTables() {
-        List<String> dates = new ArrayList<>();
+    public Querydb() {
+    }
+
+    public static void main(String[] args) {
+        Querydb querydb = new Querydb();
+        querydb.getTables();
+    }
+
+    public void getTables() {
+        //List<String> dates = new ArrayList<>();
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement stmt = conn.createStatement();
@@ -45,15 +54,17 @@ public class Querydb {
                 //System.out.println(rs.getString(1));
                 //System.out.println(dates.size());
             }
+            //return dates;
 
         } catch (SQLException e) {
             System.out.println("So sorry: " + e.getMessage());
             e.printStackTrace();
         }
             //getStocks(dates);
-            getTotals(dates);
-    }
+            //getTotals(dates);
+        getTotals();
 
+    }
 
     private static void getStocks(List<String>dates) {
 
@@ -88,7 +99,7 @@ public class Querydb {
 
     }
 
-    private static void getTotals(List<String> dates) {
+    public List<Total> getTotals() {
         try{
             conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement stmt = conn.createStatement();
@@ -118,15 +129,8 @@ public class Querydb {
             System.out.println("Totals Error: " + e.getMessage());
             e.printStackTrace();
         }
+        System.out.println(totals.size());
+        return totals;
 
     }
-
-    //STUCK AT THIS POINT TRYING TO FIGURE OUT HOW TO GET STRINGS TO INDEX.JSP
-
-//    private static List<com.wiltrahan.Stock> toBrowser() {
-//
-//    }
-
-
-
 }

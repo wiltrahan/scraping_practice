@@ -1,12 +1,25 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page import="com.wiltrahan.Querydb" %>
+<%@ page import="com.wiltrahan.Total" %>
+<%@ page import="java.util.List" %>
+
+<%
+    Querydb querydb = new Querydb();
+    querydb.getTables();
+    List<Total> totals = querydb.getTotals();
+
+    request.setAttribute("myTotals", totals);
+%>
 
 <html>
-<body>
+    <body>
 
-<c:set var="stuff" value="<%= new java.util.Date()%>"/>
+        <c:forEach var="tempTotals" items="${myTotals}">
+
+            ${tempTotals.portfolioTotal}
+        </c:forEach>
 
 
-Time on the server is ${stuff}
-</body>
+    </body>
 
 </html>
