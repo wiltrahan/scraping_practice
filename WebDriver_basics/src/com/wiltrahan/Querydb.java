@@ -30,7 +30,7 @@ public class Querydb {
     private static ArrayList<String> dates = new ArrayList<>();
 
     private static Map<String, Total> port = new HashMap<>();
-    
+
 
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {

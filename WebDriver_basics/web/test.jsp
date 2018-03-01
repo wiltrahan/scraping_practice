@@ -15,10 +15,24 @@
 <html>
     <body>
 
-        <c:forEach var="port" items="${myPort}" >
-            ${port.key}
-            ${port.value.portfolioTotal} ${port.value.portfolioDayGain}
-        </c:forEach>
+        <table border="3" width="450">
+            <tr>
+                <th>Date</th>
+                <th>Total Value</th>
+                <th>Daily Gain</th>
+            </tr>
+
+            <c:forEach var="port" items="${myPort}" >
+                <tr>
+                    <td>${port.key}</td>
+                    <td>${port.value.portfolioTotal}</td>
+                    <td>${port.value.portfolioDayGain}</td>
+                </tr>
+            </c:forEach>
+
+        </table>
     </body>
+
+
 
 </html>

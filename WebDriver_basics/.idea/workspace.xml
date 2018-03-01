@@ -37,40 +37,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/test.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Querydb.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Querydb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Querydb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="-311">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getStocks#0;class#Querydb#0" expanded="false" />
-                <marker date="1519934573909" expanded="true" signature="1984:2035" ph="SELECT name sqlite_master" />
-                <marker date="1519934573909" expanded="true" signature="2734:2807" ph="SELECT * FRO... missingValue" />
-                <marker date="1519934573909" expanded="true" signature="4100:4111" ph="SELECT 'port... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4126" ph="SELECT portf... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4131" ph="SELECT 'port... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4194" ph="SELECT 'port... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4205" ph="SELECT portf... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4210" ph="SELECT portf... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4215" ph="SELECT 'port... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4277" ph="SELECT 'port... " />
-                <marker date="1519934573909" expanded="true" signature="4100:4297" ph="SELECT portf... missingValue" />
-                <marker date="1519934573909" expanded="true" signature="4100:4298" ph="SELECT 'port... missingValue" />
-                <marker date="1519934573909" expanded="true" signature="4100:4363" ph="SELECT portf... missingValue" />
-                <marker date="1519934573909" expanded="true" signature="4100:4383" ph="SELECT portf... missingValue" />
-                <marker date="1519934573909" expanded="true" signature="4100:4400" ph="SELECT portf... missingValue" />
-                <marker date="1519934573909" expanded="true" signature="4100:4402" ph="SELECT 'port... missingValue" />
+                <marker date="1519934883816" expanded="true" signature="1980:2031" ph="SELECT name sqlite_master" />
+                <marker date="1519934883816" expanded="true" signature="2730:2803" ph="SELECT * FRO... missingValue" />
+                <marker date="1519934883816" expanded="true" signature="4096:4107" ph="SELECT 'port... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4122" ph="SELECT portf... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4127" ph="SELECT 'port... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4190" ph="SELECT 'port... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4201" ph="SELECT portf... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4206" ph="SELECT portf... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4211" ph="SELECT 'port... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4273" ph="SELECT 'port... " />
+                <marker date="1519934883816" expanded="true" signature="4096:4293" ph="SELECT portf... missingValue" />
+                <marker date="1519934883816" expanded="true" signature="4096:4294" ph="SELECT 'port... missingValue" />
+                <marker date="1519934883816" expanded="true" signature="4096:4359" ph="SELECT portf... missingValue" />
+                <marker date="1519934883816" expanded="true" signature="4096:4379" ph="SELECT portf... missingValue" />
+                <marker date="1519934883816" expanded="true" signature="4096:4396" ph="SELECT portf... missingValue" />
+                <marker date="1519934883816" expanded="true" signature="4096:4398" ph="SELECT 'port... missingValue" />
               </folding>
             </state>
           </provider>
@@ -221,8 +221,8 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/view_students.jsp" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/MvcDemoServlet.java" />
-        <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/Querydb.java" />
+        <option value="$PROJECT_DIR$/web/test.jsp" />
       </list>
     </option>
   </component>
@@ -246,9 +246,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="23" />
-    <option name="width" value="1204" />
+    <option name="x" value="227" />
+    <option name="y" value="28" />
+    <option name="width" value="1188" />
     <option name="height" value="825" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -645,12 +645,12 @@
       <workItem from="1519857431783" duration="6383000" />
       <workItem from="1519865121065" duration="3255000" />
       <workItem from="1519869668145" duration="4207000" />
-      <workItem from="1519925983894" duration="7880000" />
+      <workItem from="1519925983894" duration="8530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79241000" />
+    <option name="totallyTimeSpent" value="79891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,7 +662,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="23" width="1204" height="825" extended-state="0" />
+    <frame x="227" y="28" width="1188" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -685,7 +685,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27260274" sideWeight="0.49488372" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14457831" sideWeight="0.7885154" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.015706806" sideWeight="0.7885154" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43651626" sideWeight="0.2114846" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -971,37 +971,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Querydb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="-311">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getStocks#0;class#Querydb#0" expanded="false" />
-            <marker date="1519934573909" expanded="true" signature="1984:2035" ph="SELECT name sqlite_master" />
-            <marker date="1519934573909" expanded="true" signature="4100:4111" ph="SELECT 'port... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4126" ph="SELECT portf... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4131" ph="SELECT 'port... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4194" ph="SELECT 'port... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4205" ph="SELECT portf... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4210" ph="SELECT portf... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4215" ph="SELECT 'port... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4277" ph="SELECT 'port... " />
-            <marker date="1519934573909" expanded="true" signature="4100:4297" ph="SELECT portf... missingValue" />
-            <marker date="1519934573909" expanded="true" signature="4100:4298" ph="SELECT 'port... missingValue" />
-            <marker date="1519934573909" expanded="true" signature="4100:4363" ph="SELECT portf... missingValue" />
-            <marker date="1519934573909" expanded="true" signature="4100:4383" ph="SELECT portf... missingValue" />
-            <marker date="1519934573909" expanded="true" signature="4100:4400" ph="SELECT portf... missingValue" />
-            <marker date="1519934573909" expanded="true" signature="4100:4402" ph="SELECT 'port... missingValue" />
+            <marker date="1519934883816" expanded="true" signature="1980:2031" ph="SELECT name sqlite_master" />
+            <marker date="1519934883816" expanded="true" signature="2730:2803" ph="SELECT * FRO... missingValue" />
+            <marker date="1519934883816" expanded="true" signature="4096:4107" ph="SELECT 'port... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4122" ph="SELECT portf... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4127" ph="SELECT 'port... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4190" ph="SELECT 'port... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4201" ph="SELECT portf... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4206" ph="SELECT portf... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4211" ph="SELECT 'port... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4273" ph="SELECT 'port... " />
+            <marker date="1519934883816" expanded="true" signature="4096:4293" ph="SELECT portf... missingValue" />
+            <marker date="1519934883816" expanded="true" signature="4096:4294" ph="SELECT 'port... missingValue" />
+            <marker date="1519934883816" expanded="true" signature="4096:4359" ph="SELECT portf... missingValue" />
+            <marker date="1519934883816" expanded="true" signature="4096:4379" ph="SELECT portf... missingValue" />
+            <marker date="1519934883816" expanded="true" signature="4096:4396" ph="SELECT portf... missingValue" />
+            <marker date="1519934883816" expanded="true" signature="4096:4398" ph="SELECT 'port... missingValue" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
