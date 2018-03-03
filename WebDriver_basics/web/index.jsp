@@ -9,28 +9,28 @@
 
 <%
 
-  LinkedHashMap<String, Total> port = Querydb.getTables();
-  request.setAttribute("myPort", port);
+//  LinkedHashMap<String, Total> port = Querydb.getTables();
+//  request.setAttribute("myPort", port);
 
 %>
 
 <html>
 <body>
 
-<table border="3" width="450">
-  <tr>
-    <th>Date/Time</th>
-    <th>Total Value</th>
-    <th>Daily Gain/Loss</th>
-  </tr>
-  <c:forEach var="totals" items="${myPort}" >
-    <tr>
-      <td>${totals.key}</td>
-      <td>${totals.value.portfolioTotal}</td>
-      <td>${totals.value.portfolioDayGain}</td>
-    </tr>
+<%--<table border="3" width="450">--%>
+  <%--<tr>--%>
+    <%--<th>Date/Time</th>--%>
+    <%--<th>Total Value</th>--%>
+    <%--<th>Daily Gain/Loss</th>--%>
+  <%--</tr>--%>
+  <%--<c:forEach var="totals" items="${myPort}" >--%>
+    <%--<tr>--%>
+      <%--<td>${totals.key}</td>--%>
+      <%--<td>${totals.value.portfolioTotal}</td>--%>
+      <%--<td>${totals.value.portfolioDayGain}</td>--%>
+    <%--</tr>--%>
 
-  </c:forEach>
+  <%--</c:forEach>--%>
 </table>
 
 
