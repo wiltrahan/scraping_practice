@@ -1,4 +1,5 @@
-<%@page import="java.util.*, com.wiltrahan.*" %>
+<%--<%@page import="java.util.*, com.wiltrahan.*" %>--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
 
@@ -11,28 +12,24 @@
 </head>
     <body>
 
-    <%
-        Map<String, Total> port = (LinkedHashMap<String, Total>) request.getAttribute("TOTALS_LIST");
-        Set<String> keys = port.keySet();
-    %>
-    <table border="3" width="450">
+    <table border="5" width="450">
         <tr>
             <th>Date/Time</th>
             <th>Total Value</th>
             <th>Daily Gain/Loss</th>
         </tr>
-    <% for(String k: keys) { %>
-        <tr>
-            <td> <%= k %> </td>
-            <td><%= port.get(k).getPortfolioTotal()%></td>
-            <td><%= port.get(k).getPortfolioDayGain()%></td>
-        </tr>
-    <%}%>
-
-
+        <c:forEach var="totals" items="${TOTALS_LIST}" >
+            <tr>
+                <td>${totals.key}</td>
+                <td>${totals.value.portfolioTotal}</td>
+                <td>${totals.value.portfolioDayGain}</td>
+            </tr>
+        </c:forEach>
     </table>
 
     </body>
 
 </html>
+
+
 
