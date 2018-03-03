@@ -6,6 +6,8 @@
 
 <head>
     <title>Totals</title>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
     <body>
 
