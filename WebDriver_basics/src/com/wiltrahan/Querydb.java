@@ -5,8 +5,8 @@ import java.util.*;
 
 public class Querydb {
 
-    private static final String DB_NAME = "portfolio.db";
-    private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db" + DB_NAME;
+    //private static final String DB_NAME = "portfolio.db";
+    //private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db" + DB_NAME;
 
     //private static final String TABLE_STOCKS = "stocks";
     private static final String COLUMN_STOCK_SYMBOL = "symbol";
@@ -15,10 +15,10 @@ public class Querydb {
     private static final String COLUMN_STOCK_DAYPCTCHG = "dayPctChg";
     private static final String COLUMN_STOCK_TOTALSHRS = "totalShrs";
 
-    private static final String TABLE_TOTALS = "totals";
+    //private static final String TABLE_TOTALS = "totals";
     private static final String COLUMN_TOTAL_PORTFOLIO = "portfolioTotal";
     private static final String COLUMN_TOTAL_DAYGAIN = "portfolioDayGain";
-    private static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
+    //private static final String COLUMN_TOTAL_GAINTOTAL = "portfolioGainTotal";
 
     private static Connection conn;
 
@@ -34,7 +34,7 @@ public class Querydb {
 
         Querydb.getTables();
     }
-    //getTables called from scriplett, sets table date as the key, and the Total object as the value
+    //getTables called from index.jsp, sets table date as the key, and the Total object as the value
     //then returns the map to the jsp file
 
     public static LinkedHashMap<String, Total> getTables() throws ClassNotFoundException {
@@ -62,7 +62,7 @@ public class Querydb {
     private static void getStocks(List<String>dates) {
 
         try{
-            conn = DriverManager.getConnection(CONNECTION_STRING);
+            conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement stmt = conn.createStatement();
             ResultSet rs;
 
