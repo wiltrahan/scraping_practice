@@ -12,8 +12,8 @@
 <jsp:include page="parts/nav.html"/>
 
 <div class="container">
-    <h1 class="text-center stock-info-date">My Portfolio Totals By Date/Time</h1>
-    <table class="table table-striped table-bordered">
+    <h1 class="text-center stock-info-date">Portfolio Details By Date/Time</h1>
+    <table class="table table-striped table-bordered animated zoomIn">
         <thead class="thead-dark">
         <tr>
             <th>Date/Time</th>

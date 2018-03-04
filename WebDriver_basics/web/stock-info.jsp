@@ -16,7 +16,7 @@
         Individual Stock Information For:
         <span id="date">${DATE}</span>
     </h1>
-    <table class="table table-striped table-bordered">
+    <table class="table table-striped table-bordered animated zoomInUp">
         <thead class="thead-dark">
         <tr>
             <th>Symbol</th>

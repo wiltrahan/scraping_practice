@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500|Raleway:300|Roboto:100');
+body {
+    background-color: #F2F2F2;
+}
+
 .bg-light {
     background-color: #52656B!important;
 }
 #nav-text {
     color: #F5F5D4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
 }
 
 .table .thead-dark th {
     background-color: #52656B;
+    font-family: 'Raleway', sans-serif;
     color: #F5F5D4;
+    border-color: #415054;
 }
 .stock-info-date {
-    color: #52656B;
-}
+    color: #415054;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
 
+}
 #date {
     font-size: 0.8em;
 }
