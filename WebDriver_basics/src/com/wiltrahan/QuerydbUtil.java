@@ -42,6 +42,7 @@ public class QuerydbUtil {
                 //dates.add(rs.getString(1));
                 port.put(rs.getString(1), getTotals(rs.getString(1)));
             }
+            rs.close();
             return port;
 
         } catch (SQLException e) {
@@ -52,39 +53,6 @@ public class QuerydbUtil {
         return null;
     }
 
-//    private static void getStocks(List<String>dates) {
-//
-//        try{
-//            conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
-//            Statement stmt = conn.createStatement();
-//            ResultSet rs;
-//
-//            for(String date : dates) {
-//                System.out.println(date);
-//                rs = stmt.executeQuery("SELECT * FROM " + "'" + date + "'" + " WHERE" + " symbol " + "IS NOT NULL");
-//                while (rs.next()) {
-//                    //String symbol = rs.getString("symbol");
-//                    String symbol = rs.getString(COLUMN_STOCK_SYMBOL);
-//                    String value = rs.getString(COLUMN_STOCK_VALUE);
-//                    String dayAmtChg = rs.getString(COLUMN_STOCK_DAYAMTCHG);
-//                    String dayPctChg = rs.getString(COLUMN_STOCK_DAYPCTCHG);
-//                    String totalShrs = rs.getString(COLUMN_STOCK_TOTALSHRS);
-//                    System.out.println(symbol + " " + value + " " + dayAmtChg + " " + dayPctChg + " " + totalShrs);
-//                }
-//                System.out.println();
-//            }
-//
-//            //return new com.wiltrahan.Stock(symbol, value);
-//            //rs.close();
-//            conn.close();
-//
-//        } catch (SQLException e) {
-//            System.out.println("Stocks Error: " + e.getMessage());
-//            e.printStackTrace();
-//        }
-//
-//    }
-
     public static List<Stock> getStocks(String date) {
         List<Stock> stockInfo = new ArrayList<>();
         try{
@@ -92,10 +60,8 @@ public class QuerydbUtil {
             Statement stmt = conn.createStatement();
             ResultSet rs = null;
 
-                //System.out.println(date);
                 rs = stmt.executeQuery("SELECT * FROM " + "'" + date + "'" + " WHERE" + " symbol " + "IS NOT NULL");
                 while (rs.next()) {
-                    //String symbol = rs.getString("symbol");
                     String symbol = rs.getString(COLUMN_STOCK_SYMBOL);
                     String value = rs.getString(COLUMN_STOCK_VALUE);
                     String dayAmtChg = rs.getString(COLUMN_STOCK_DAYAMTCHG);
@@ -104,12 +70,9 @@ public class QuerydbUtil {
                     System.out.println(symbol + " " + value + " " + dayAmtChg + " " + dayPctChg + " " + totalShrs);
                     stockInfo.add(new Stock(symbol, value, dayAmtChg, dayPctChg, totalShrs));
                 }
-                //System.out.println();
-
+            rs.close();
+                conn.close();
             return stockInfo;
-            //return new com.wiltrahan.Stock(symbol, value);
-            //rs.close();
-            //conn.close();
 
         } catch (SQLException e) {
             System.out.println("Stocks Error: " + e.getMessage());
@@ -131,13 +94,13 @@ public class QuerydbUtil {
                                                         "WHERE " + "portfolioTotal " + "IS NOT NULL");
                     String total = rs.getString(COLUMN_TOTAL_PORTFOLIO);
                     String dayGain = rs.getString(COLUMN_TOTAL_DAYGAIN);
+                    conn.close();
                     return new Total(total, dayGain);
 
         } catch (SQLException e) {
             System.out.println("Totals Error: " + e.getMessage());
             e.printStackTrace();
         }
-
         return null;
     }
 

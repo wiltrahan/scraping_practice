@@ -50,6 +50,7 @@ public class ServletControllerQueryDb extends HttpServlet {
         List<Stock> stocks = QuerydbUtil.getStocks(date);
 
         request.setAttribute("STOCKS_LIST", stocks);
+        request.setAttribute("DATE", date);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("stock-info.jsp");
         dispatcher.forward(request, response);

@@ -38,5 +38,6 @@
     </orderEntry>
     <orderEntry type="library" name="sqlite-jdbc-3.21.0" level="project" />
     <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>
