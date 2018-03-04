@@ -1,1 +1,18 @@
+.bg-light {
+    background-color: #52656B!important;
+}
+#nav-text {
+    color: #F5F5D4;
+}
 
+.table .thead-dark th {
+    background-color: #52656B;
+    color: #F5F5D4;
+}
+.stock-info-date {
+    color: #52656B;
+}
+
+#date {
+    font-size: 0.8em;
+}

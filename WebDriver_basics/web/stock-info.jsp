@@ -2,22 +2,20 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<html>
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <%@ include file="parts/meta.jsp"%>
         <title>Stock Info</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <%@ include file="parts/header.jsp" %>
     </head>
     <body>
+
+
+    <jsp:include page="parts/nav.html"/>
 <div class="container">
-    <h2 id="stock-info-date" class="text-center">
-        Individual Stock Information for:
-        ${DATE}
-    </h2>
+    <h1 class="text-center stock-info-date">
+        Individual Stock Information For:
+        <span id="date">${DATE}</span>
+    </h1>
     <table class="table table-striped table-bordered">
         <thead class="thead-dark">
         <tr>
