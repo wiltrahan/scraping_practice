@@ -12,7 +12,7 @@
     <jsp:include page="parts/nav.html"/>
     <div class="container">
         <h1 class="text-center stock-info-date">Portfolio Details By Date/Time</h1>
-        <table class="table table-striped table-bordered animated zoomIn">
+        <table class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>
                 <th>Date/Time</th>
@@ -31,7 +31,7 @@
                     <td>${totals.key}</td>
                     <td>${totals.value.portfolioTotal}</td>
                     <td>${totals.value.portfolioDayGain}</td>
-                    <td> <a href="${tempLink}">More Info</a> </td>
+                    <td><a href="${tempLink}"><button type="button" class="btn btn-outline-primary btn-block">More Info</button></a></td>
                 </tr>
                 </tbody>
             </c:forEach>

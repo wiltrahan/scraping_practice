@@ -37,7 +37,7 @@
                     </tbody>
                 </c:forEach>
             </table>
-            <a href="ServletControllerQueryDb">Back to daily listings</a>
+            <a href="ServletControllerQueryDb"><button type="button" class="btn btn-outline-primary">Back to daily listings</button></a>
         </div>
     </body>
 </html>
