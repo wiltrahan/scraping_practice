@@ -13,6 +13,8 @@ import java.util.List;
 
 @WebServlet("/ServletControllerQueryDb")
 
+//THIS IS WHERE THE MAGIC.....BEGINS!
+
 public class ServletControllerQueryDb extends HttpServlet {
 
     private QueryDbUtil queryDbUtil;
@@ -28,21 +30,31 @@ public class ServletControllerQueryDb extends HttpServlet {
         }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
         try {
-
-            //if 'more' button click
+            //if 'MORE INFO' button on portfolioTotals.jsp is clicked -- stockInfo is called
             if(request.getParameter("command") != null) {
                 stockInfo(request, response);
             } else {
                 portfolioTotals(request, response);
             }
-
+            //if it is not clicked, or click registers null -- portfolioTotals is called
             portfolioTotals(request, response);
 
         } catch (Exception e) {
            throw new ServletException(e);
         }
+    }
+
+    private void portfolioTotals(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, ServletException, IOException {
+
+        LinkedHashMap<String, Total> port = QueryDbUtil.getTables();
+
+        request.setAttribute("TOTALS_LIST", port);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("portfolioTotals.jsp");
+
+        dispatcher.forward(request, response);
     }
 
     private void stockInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -56,13 +68,5 @@ public class ServletControllerQueryDb extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    private void portfolioTotals(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, ServletException, IOException {
-        LinkedHashMap<String, Total> port = QueryDbUtil.getTables();
 
-        request.setAttribute("TOTALS_LIST", port);
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("portfolioTotals.jsp");
-
-        dispatcher.forward(request, response);
-    }
 }

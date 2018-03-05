@@ -10,6 +10,7 @@
 </head>
 <body>
     <jsp:include page="parts/nav.html"/>
+
     <div class="container">
         <h1 class="text-center stock-info-date">Portfolio Details By Date/Time</h1>
         <table class="table table-striped table-bordered">

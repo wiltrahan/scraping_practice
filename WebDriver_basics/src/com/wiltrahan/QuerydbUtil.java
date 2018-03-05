@@ -16,8 +16,8 @@ public class QueryDbUtil {
 
     private static Connection conn;
 
-    public static ArrayList<Total> totals = new ArrayList<>();
-    private static ArrayList<String> dates = new ArrayList<>();
+//    public static ArrayList<Total> totals = new ArrayList<>();
+//    private static ArrayList<String> dates = new ArrayList<>();
 
     private static LinkedHashMap port = new LinkedHashMap<String, Total>();
 
@@ -30,7 +30,7 @@ public class QueryDbUtil {
     //getTables called from index.jsp, sets table date as the key, and the Total object as the value
     //then returns the map to the jsp file
 
-    public static LinkedHashMap<String, Total> getTables() throws ClassNotFoundException {
+    public static LinkedHashMap<String, Total> getTables() {
         try{
             conn = DriverManager.getConnection("jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/portfolio.db");
             Statement stmt = conn.createStatement();
