@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class DB {
+public class InsertDbUtil {
 
     private ArrayList<Stock> myStocks;
     private ArrayList<Total> myTotals;
@@ -25,7 +25,6 @@ public class DB {
     private static final String DB_NAME = "portfolio.db";
     private static final String CONNECTION_STRING = "jdbc:sqlite:/Users/twilorip/Desktop/scraping_practice/WebDriver_basics/" + DB_NAME;
 
-    //private static final String TABLE_STOCKS = "stocks";
     private static final String COLUMN_STOCK_SYMBOL = "symbol";
     private static final String COLUMN_STOCK_VALUE = "value";
     private static final String COLUMN_STOCK_DAYAMTCHG = "dayAmtChg";
@@ -55,14 +54,9 @@ public class DB {
                                        COLUMN_TOTAL_DAYGAIN + " text, " +
                                        COLUMN_TOTAL_GAINTOTAL + " text" +
                                 ")");
-//            statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_TOTALS +
-//                                " (" + COLUMN_TOTAL_PORTFOLIO + " text, " +
-//                                       COLUMN_TOTAL_DAYGAIN + " text, " +
-//                                       COLUMN_TOTAL_GAINTOTAL + " text" +
-//                                ")");
 
         } catch (SQLException e) {
-            System.out.println("Couldn't create com.wiltrahan.DB: " + e.getMessage());
+            System.out.println("Couldn't create com.wiltrahan.InsertDbUtil: " + e.getMessage());
             e.printStackTrace();
         }
     }

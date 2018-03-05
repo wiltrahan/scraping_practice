@@ -52,17 +52,17 @@ public class OpenAndScrape {
 
         //port.printPortfolio();
 
-        DB db = new DB();
-        db.createDB();
-        db.open();
+        InsertDbUtil insertDbUtil = new InsertDbUtil();
+        insertDbUtil.createDB();
+        insertDbUtil.open();
 
-        db.portfolioList(stockPortfolio);
+        insertDbUtil.portfolioList(stockPortfolio);
 
-        db.totalsList(totalPortfolio);
+        insertDbUtil.totalsList(totalPortfolio);
 
-        db.dbInsertStocks();
+        insertDbUtil.dbInsertStocks();
 
-        db.close();
+        insertDbUtil.close();
     }
 
 //    private void openSite() {

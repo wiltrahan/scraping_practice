@@ -3,7 +3,7 @@ package com.wiltrahan;
 import java.sql.*;
 import java.util.*;
 
-public class QuerydbUtil {
+public class QueryDbUtil {
 
     private static final String COLUMN_STOCK_SYMBOL = "symbol";
     private static final String COLUMN_STOCK_VALUE = "value";
@@ -25,7 +25,7 @@ public class QuerydbUtil {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
-        QuerydbUtil.getTables();
+        QueryDbUtil.getTables();
     }
     //getTables called from index.jsp, sets table date as the key, and the Total object as the value
     //then returns the map to the jsp file

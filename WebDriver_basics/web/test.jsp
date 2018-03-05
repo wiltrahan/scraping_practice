@@ -9,7 +9,7 @@
 
 <%--<%--%>
 
-    <%--//  LinkedHashMap<String, Total> port = QuerydbUtil.getTables();--%>
+    <%--//  LinkedHashMap<String, Total> port = QueryDbUtil.getTables();--%>
 <%--//  request.setAttribute("myPort", port);--%>
 
 <%--%>--%>
