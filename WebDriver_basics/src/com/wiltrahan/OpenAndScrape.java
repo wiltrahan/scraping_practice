@@ -21,7 +21,6 @@ public class OpenAndScrape {
         System.setProperty("webdriver.gecko.driver", "/Users/twilorip/Desktop/webDrivers/firefox/geckodriver");
 
         OpenAndScrape openAndScrape = new OpenAndScrape();
-        //openAndScrape.openSite();
         openAndScrape.login(username, password);
 
         //com.wiltrahan.PrintPortfolio port = new com.wiltrahan.PrintPortfolio();

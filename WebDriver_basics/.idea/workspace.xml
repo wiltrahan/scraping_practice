@@ -50,48 +50,19 @@
       <file leaf-file-name="stock-info.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/stock-info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="210">
+              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServletControllerQueryDb.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServletControllerQueryDb.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="34" column="92" lean-forward="false" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+            <state relative-caret-position="582">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryDbUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/QueryDbUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#617#681#0" expanded="false" />
-                <marker date="1520292748258" expanded="true" signature="1503:1554" ph="SELECT name sqlite_master" />
-                <marker date="1520292748258" expanded="true" signature="2321:2394" ph="SELECT * FRO... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3633" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3648" ph="SELECT portf... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3653" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3716" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3727" ph="SELECT portf... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3732" ph="SELECT portf... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3737" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3799" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3819" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3820" ph="SELECT 'port... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3885" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3905" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3922" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3924" ph="SELECT 'port... missingValue" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -99,25 +70,13 @@
       <file leaf-file-name="OpenAndScrape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            <state relative-caret-position="241">
+              <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
               <folding>
-                <element signature="e#1884#1915#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertDbUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/InsertDbUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
-              <folding>
-                <element signature="e#4760#4796#0" expanded="false" />
-                <marker date="1520211534770" expanded="true" signature="1742:2431" ph="CREATE TABLE... IF" />
-                <marker date="1520211534770" expanded="true" signature="3363:4000" ph="INSERT INTO " />
-                <marker date="1520211534770" expanded="true" signature="4121:4563" ph="INSERT INTO " />
+                <element signature="imports" expanded="true" />
+                <element signature="e#761#834#0" expanded="false" />
+                <element signature="e#1403#1435#0" expanded="false" />
+                <element signature="e#1848#1879#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -143,6 +102,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="QueryDbUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/QueryDbUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-333">
+              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#617#681#0" expanded="false" />
+                <marker date="1520292748258" expanded="true" signature="1503:1554" ph="SELECT name sqlite_master" />
+                <marker date="1520292748258" expanded="true" signature="2321:2394" ph="SELECT * FRO... missingValue" />
+                <marker date="1520292748258" expanded="true" signature="3622:3633" ph="SELECT 'port... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3648" ph="SELECT portf... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3653" ph="SELECT 'port... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3716" ph="SELECT 'port... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3727" ph="SELECT portf... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3732" ph="SELECT portf... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3737" ph="SELECT 'port... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3799" ph="SELECT 'port... " />
+                <marker date="1520292748258" expanded="true" signature="3622:3819" ph="SELECT portf... missingValue" />
+                <marker date="1520292748258" expanded="true" signature="3622:3820" ph="SELECT 'port... missingValue" />
+                <marker date="1520292748258" expanded="true" signature="3622:3885" ph="SELECT portf... missingValue" />
+                <marker date="1520292748258" expanded="true" signature="3622:3905" ph="SELECT portf... missingValue" />
+                <marker date="1520292748258" expanded="true" signature="3622:3922" ph="SELECT portf... missingValue" />
+                <marker date="1520292748258" expanded="true" signature="3622:3924" ph="SELECT 'port... missingValue" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -161,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Totals.java" />
         <option value="$PROJECT_DIR$/src/StartHere.java" />
         <option value="$PROJECT_DIR$/src/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/PrintPortfolio.java" />
@@ -183,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/com/test/Querydb.java" />
         <option value="$PROJECT_DIR$/src/Querydb.java" />
         <option value="$PROJECT_DIR$/src/Total.java" />
-        <option value="$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/Personal.java" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/DB.java" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/PrintPortfolio.java" />
@@ -208,10 +194,12 @@
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/InsertDbUtil.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/stock-info.jsp" />
         <option value="$PROJECT_DIR$/web/portfolioTotals.jsp" />
-        <option value="$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/QueryDbUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java" />
+        <option value="$PROJECT_DIR$/src/com/wiltrahan/Helper.java" />
+        <option value="$PROJECT_DIR$/web/stock-info.jsp" />
+        <option value="$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java" />
       </list>
     </option>
   </component>
@@ -235,9 +223,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="76" />
-    <option name="y" value="32" />
-    <option name="width" value="1312" />
+    <option name="x" value="143" />
+    <option name="y" value="50" />
+    <option name="width" value="1230" />
     <option name="height" value="814" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -296,6 +284,11 @@
             <path>
               <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,6 +301,12 @@
               <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
@@ -636,12 +635,12 @@
       <workItem from="1520188849545" duration="16728000" />
       <workItem from="1520210606332" duration="3318000" />
       <workItem from="1520283853580" duration="128000" />
-      <workItem from="1520289746735" duration="2739000" />
+      <workItem from="1520289746735" duration="9247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131304000" />
+    <option name="totallyTimeSpent" value="137812000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -653,7 +652,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="76" y="32" width="1312" height="814" extended-state="0" />
+    <frame x="143" y="50" width="1230" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -674,9 +673,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30866143" sideWeight="0.49488372" order="9" side_tool="false" content_ui="tabs" x="321" y="90" width="767" height="541" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22053872" sideWeight="0.49488372" order="9" side_tool="false" content_ui="tabs" x="321" y="90" width="767" height="541" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11732283" sideWeight="0.58219177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2020202" sideWeight="0.58219177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2521815" sideWeight="0.4178082" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -713,7 +712,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CheckSauceLabsHomePageTest.java" />
     <entry file="file://$PROJECT_DIR$/src/CheckSauceLabsHomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/ChromeScrape.java" />
     <entry file="file://$PROJECT_DIR$/src/TestSelenium.java" />
@@ -813,14 +811,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerDbQuery.java" />
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/TotalsControllerServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/ServletControllerQueryDb.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/parts/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -868,53 +858,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/stock-info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Total.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/portfolioTotals.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="34" column="92" lean-forward="false" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-          <folding>
-            <element signature="e#1884#1915#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,10 +879,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/QueryDbUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+        <state relative-caret-position="-333">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#617#681#0" expanded="false" />
@@ -955,6 +927,43 @@
             <marker date="1520292748258" expanded="true" signature="3622:3922" ph="SELECT portf... missingValue" />
             <marker date="1520292748258" expanded="true" signature="3622:3924" ph="SELECT 'port... missingValue" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#761#834#0" expanded="false" />
+            <element signature="e#1403#1435#0" expanded="false" />
+            <element signature="e#1848#1879#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stock-info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/portfolioTotals.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -989,6 +998,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>bootstrap</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1012,7 +1022,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|WebDriver_basics</last-edited>
+          <last-edited>WebDriver_basics</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

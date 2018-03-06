@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -57,16 +60,31 @@ public class ServletControllerQueryDb extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    private void stockInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private void stockInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, ParseException {
+
         String date = request.getParameter("date");
         List<Stock> stocks = QueryDbUtil.getStocks(date);
 
+        String[] timeSplit = date.split("\\s+");
+
+        String time = formatTime(timeSplit[1]);
+
         request.setAttribute("STOCKS_LIST", stocks);
-        request.setAttribute("DATE", date);
+        request.setAttribute("DATE", timeSplit[0]);
+        request.setAttribute("TIME", time);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("stock-info.jsp");
         dispatcher.forward(request, response);
     }
 
+    private String formatTime(String time) throws ParseException {
+        //old format
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        Date date3 = sdf.parse(time);
+        //new format
+        SimpleDateFormat sdf2 = new SimpleDateFormat("hh:mm aa");
+        //formatting the given time to new format with AM/PM
+        return sdf2.format(date3);
+    }
 
 }
