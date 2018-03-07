@@ -42,10 +42,10 @@ public class ServletControllerQueryDb extends HttpServlet {
                 portfolioTotals(request, response);
             }
             //if it is not clicked, or click registers null -- portfolioTotals is called
-            portfolioTotals(request, response);
+            //portfolioTotals(request, response);
 
         } catch (Exception e) {
-           throw new ServletException(e);
+           throw new ServletException(e.getMessage());
         }
     }
 

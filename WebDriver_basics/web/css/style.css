@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500|Raleway:300|Roboto:100');
 body {
-    background-color: #F2F2F2;
+    background-color: #F2F2F2;;
 }
 
 .bg-light {
@@ -35,6 +35,10 @@ body {
 }
 #date {
     font-size: 0.8em;
+}
+
+#time {
+    font-size: 0.6em;
 }
 
 .table-bordered td {

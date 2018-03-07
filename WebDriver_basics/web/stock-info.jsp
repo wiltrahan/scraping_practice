@@ -13,7 +13,7 @@
         <div class="container">
             <h1 class="text-center stock-info-date">
                 Stock Information For:
-                <span id="date">${DATE}  ${TIME}</span>
+                <p id="date">${DATE}  <span id="time"> ${TIME}</span></p>
             </h1>
             <table class="table table-striped table-bordered animated zoomInUp">
                 <thead class="thead-dark">
@@ -41,4 +41,3 @@
             <a href="ServletControllerQueryDb"><button type="button" class="btn btn-outline-primary">Back to daily listings</button></a>
         </div>
     </body>
-</html>
