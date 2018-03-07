@@ -82,7 +82,7 @@ public class ServletControllerQueryDb extends HttpServlet {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
         Date date3 = sdf.parse(time);
         //new format
-        SimpleDateFormat sdf2 = new SimpleDateFormat("hh:mm aa");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("h:mm aa");
         //formatting the given time to new format with AM/PM
         return sdf2.format(date3);
     }

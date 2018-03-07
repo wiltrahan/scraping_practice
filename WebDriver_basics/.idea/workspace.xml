@@ -40,8 +40,8 @@
       <file leaf-file-name="portfolioTotals.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/portfolioTotals.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -50,28 +50,18 @@
       <file leaf-file-name="stock-info.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/stock-info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="225">
               <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServletControllerQueryDb.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServletControllerQueryDb.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="296">
+              <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -80,7 +70,7 @@
       <file leaf-file-name="OpenAndScrape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="660">
               <caret line="55" column="27" lean-forward="false" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -206,10 +196,10 @@
         <option value="$PROJECT_DIR$/src/com/wiltrahan/QueryDbUtil.java" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/Helper.java" />
-        <option value="$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java" />
         <option value="$PROJECT_DIR$/web/portfolioTotals.jsp" />
         <option value="$PROJECT_DIR$/web/stock-info.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java" />
       </list>
     </option>
   </component>
@@ -233,8 +223,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="166" />
-    <option name="y" value="53" />
+    <option name="x" value="59" />
+    <option name="y" value="23" />
     <option name="width" value="1230" />
     <option name="height" value="814" />
   </component>
@@ -281,10 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,30 +278,14 @@
               <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,6 +425,7 @@
     <configuration name="GlassFish 4.1.2" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.2" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WebDriver_basics_war_exploded" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="WebDriver_basics:war exploded">
@@ -636,12 +607,13 @@
       <workItem from="1520210606332" duration="3318000" />
       <workItem from="1520283853580" duration="128000" />
       <workItem from="1520289746735" duration="9911000" />
-      <workItem from="1520378773658" duration="4226000" />
+      <workItem from="1520378773658" duration="5463000" />
+      <workItem from="1520463317306" duration="759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142702000" />
+    <option name="totallyTimeSpent" value="144698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -653,8 +625,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="166" y="53" width="1230" height="814" extended-state="0" />
-    <editor active="true" />
+    <frame x="59" y="23" width="1230" height="814" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47705147" sideWeight="0.5051163" order="1" side_tool="true" content_ui="tabs" />
@@ -668,15 +639,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32328767" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32267037" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23484848" sideWeight="0.49488372" order="9" side_tool="false" content_ui="tabs" x="321" y="90" width="767" height="541" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54713804" sideWeight="0.49488372" order="9" side_tool="false" content_ui="tabs" x="321" y="90" width="767" height="541" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18097644" sideWeight="0.58219177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25084174" sideWeight="0.58219177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2521815" sideWeight="0.4178082" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -804,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,11 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#238#239#0" expanded="false" />
-            <element signature="e#287#288#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,12 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
-          <folding>
-            <element signature="e#4760#4796#0" expanded="false" />
-            <marker date="1520211534770" expanded="true" signature="1742:2431" ph="CREATE TABLE... IF" />
-            <marker date="1520211534770" expanded="true" signature="3363:4000" ph="INSERT INTO " />
-            <marker date="1520211534770" expanded="true" signature="4121:4563" ph="INSERT INTO " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -952,25 +911,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/portfolioTotals.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/OpenAndScrape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="660">
           <caret line="55" column="27" lean-forward="false" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -983,7 +934,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/stock-info.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="225">
           <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
@@ -993,6 +944,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
           <folding />
         </state>
       </provider>
