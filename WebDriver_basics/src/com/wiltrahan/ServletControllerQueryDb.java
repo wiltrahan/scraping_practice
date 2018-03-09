@@ -20,14 +20,14 @@ import java.util.List;
 
 public class ServletControllerQueryDb extends HttpServlet {
 
-    private QueryDbUtil queryDbUtil;
+    private QuerydbUtil queryDbUtil;
     private DataSource dataSource;
 
     @Override
     public void init() throws ServletException {
         super.init();
         try {
-            queryDbUtil = new QueryDbUtil();
+            queryDbUtil = new QuerydbUtil();
         } catch (Exception e) {
             throw new ServletException(e);
         }
@@ -51,7 +51,7 @@ public class ServletControllerQueryDb extends HttpServlet {
 
     private void portfolioTotals(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, ServletException, IOException {
 
-        LinkedHashMap<String, Total> port = QueryDbUtil.getTables();
+        LinkedHashMap<String, Total> port = QuerydbUtil.getTables();
 
         request.setAttribute("TOTALS_LIST", port);
 
@@ -63,7 +63,7 @@ public class ServletControllerQueryDb extends HttpServlet {
     private void stockInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, ParseException {
 
         String date = request.getParameter("date");
-        List<Stock> stocks = QueryDbUtil.getStocks(date);
+        List<Stock> stocks = QuerydbUtil.getStocks(date);
 
         String[] timeSplit = date.split("\\s+");
 

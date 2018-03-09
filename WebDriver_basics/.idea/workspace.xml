@@ -37,21 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="portfolioTotals.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="portfolioTotals.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/portfolioTotals.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="31" column="115" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="115" />
               <folding />
             </state>
           </provider>
@@ -112,31 +102,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryDbUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/QueryDbUtil.java">
+      <file leaf-file-name="QuerydbUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/QuerydbUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="224">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#617#681#0" expanded="false" />
-                <marker date="1520292748258" expanded="true" signature="1503:1554" ph="SELECT name sqlite_master" />
-                <marker date="1520292748258" expanded="true" signature="2321:2394" ph="SELECT * FRO... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3633" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3648" ph="SELECT portf... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3653" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3716" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3727" ph="SELECT portf... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3732" ph="SELECT portf... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3737" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3799" ph="SELECT 'port... " />
-                <marker date="1520292748258" expanded="true" signature="3622:3819" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3820" ph="SELECT 'port... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3885" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3905" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3922" ph="SELECT portf... missingValue" />
-                <marker date="1520292748258" expanded="true" signature="3622:3924" ph="SELECT 'port... missingValue" />
+                <marker date="1520633066210" expanded="true" signature="1503:1554" ph="SELECT name sqlite_master" />
+                <marker date="1520633066210" expanded="true" signature="2321:2394" ph="SELECT * FRO... missingValue" />
+                <marker date="1520633066210" expanded="true" signature="3622:3922" ph="SELECT portf... missingValue" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertDbUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/InsertDbUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1320">
+              <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+              <folding>
+                <marker date="1520632665198" expanded="true" signature="1742:2431" ph="CREATE TABLE... missingValue" />
+                <marker date="1520632665198" expanded="true" signature="3363:4000" ph="INSERT INTO 'missingValue'... " />
+                <marker date="1520632665198" expanded="true" signature="4121:4563" ph="INSERT INTO 'missingValue'... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/StartHere.java" />
         <option value="$PROJECT_DIR$/src/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/PrintPortfolio.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
@@ -205,7 +205,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/test2.jsp" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/Stock.java" />
-        <option value="$PROJECT_DIR$/src/com/wiltrahan/QuerydbUtil.java" />
         <option value="$PROJECT_DIR$/web/nav.html" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
         <option value="$PROJECT_DIR$/web/parts/meta.jsp" />
@@ -220,6 +219,8 @@
         <option value="$PROJECT_DIR$/web/stock-info.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java" />
+        <option value="$PROJECT_DIR$/src/com/wiltrahan/QuerydbUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
       </list>
     </option>
   </component>
@@ -243,9 +244,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="45" />
+    <option name="x" value="13" />
     <option name="y" value="23" />
-    <option name="width" value="1080" />
+    <option name="width" value="1291" />
     <option name="height" value="823" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -291,8 +292,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,13 +315,19 @@
             <path>
               <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDriver_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver_basics" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -343,6 +350,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wiltrahan" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -402,9 +412,9 @@
       <module name="WebDriver_basics" />
       <envs />
     </configuration>
-    <configuration name="QueryDbUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="QuerydbUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.wiltrahan.QueryDbUtil" />
+      <option name="MAIN_CLASS_NAME" value="com.wiltrahan.QuerydbUtil" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -598,11 +608,11 @@
       <item index="2" class="java.lang.String" itemvalue="Application.DB" />
       <item index="3" class="java.lang.String" itemvalue="Application.Test" />
       <item index="4" class="java.lang.String" itemvalue="Application.Stock" />
-      <item index="5" class="java.lang.String" itemvalue="Application.QueryDbUtil" />
+      <item index="5" class="java.lang.String" itemvalue="Application.QuerydbUtil" />
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.QueryDbUtil" />
+        <item index="0" class="java.lang.String" itemvalue="Application.QuerydbUtil" />
         <item index="1" class="java.lang.String" itemvalue="Application.Test" />
         <item index="2" class="java.lang.String" itemvalue="Application.DB" />
         <item index="3" class="java.lang.String" itemvalue="Application.Stock" />
@@ -652,11 +662,12 @@
       <workItem from="1520468601998" duration="29000" />
       <workItem from="1520469004153" duration="612000" />
       <workItem from="1520533813077" duration="51000" />
+      <workItem from="1520632679691" duration="443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146868000" />
+    <option name="totallyTimeSpent" value="147311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -668,13 +679,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="23" width="1080" height="823" extended-state="0" />
-    <editor active="true" />
+    <frame x="13" y="23" width="1291" height="823" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47705147" sideWeight="0.5051163" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282626" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283721" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -683,15 +693,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32267037" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62774724" sideWeight="0.4973221" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46435452" sideWeight="0.49488372" order="9" side_tool="false" content_ui="tabs" x="321" y="90" width="767" height="541" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46357086" sideWeight="0.49488372" order="9" side_tool="false" content_ui="tabs" x="321" y="90" width="767" height="541" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11753372" sideWeight="0.58219177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2153723" sideWeight="0.58219177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2521815" sideWeight="0.4178082" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -763,7 +773,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CheckSauceLabsHomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/ChromeScrape.java" />
     <entry file="file://$PROJECT_DIR$/src/TestSelenium.java" />
     <entry file="file://$PROJECT_DIR$/symbolsTest.txt" />
@@ -808,13 +817,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Personal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/Personal.java" />
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletDemo.java" />
     <entry file="jar://$PROJECT_DIR$/../../Beats/beats2/jstl-libs/javax.servlet.jsp.jstl-1.2.1.jar!/META-INF/sql-1_0-rt.tld" />
     <entry file="file://$PROJECT_DIR$/web/view_students.jsp" />
@@ -888,13 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/InsertDbUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -940,46 +936,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="115" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/ServletControllerQueryDb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/QueryDbUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#681#0" expanded="false" />
-            <marker date="1520292748258" expanded="true" signature="1503:1554" ph="SELECT name sqlite_master" />
-            <marker date="1520292748258" expanded="true" signature="2321:2394" ph="SELECT * FRO... missingValue" />
-            <marker date="1520292748258" expanded="true" signature="3622:3633" ph="SELECT 'port... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3648" ph="SELECT portf... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3653" ph="SELECT 'port... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3716" ph="SELECT 'port... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3727" ph="SELECT portf... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3732" ph="SELECT portf... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3737" ph="SELECT 'port... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3799" ph="SELECT 'port... " />
-            <marker date="1520292748258" expanded="true" signature="3622:3819" ph="SELECT portf... missingValue" />
-            <marker date="1520292748258" expanded="true" signature="3622:3820" ph="SELECT 'port... missingValue" />
-            <marker date="1520292748258" expanded="true" signature="3622:3885" ph="SELECT portf... missingValue" />
-            <marker date="1520292748258" expanded="true" signature="3622:3905" ph="SELECT portf... missingValue" />
-            <marker date="1520292748258" expanded="true" signature="3622:3922" ph="SELECT portf... missingValue" />
-            <marker date="1520292748258" expanded="true" signature="3622:3924" ph="SELECT 'port... missingValue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,6 +957,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/InsertDbUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+          <folding>
+            <marker date="1520632665198" expanded="true" signature="1742:2431" ph="CREATE TABLE... missingValue" />
+            <marker date="1520632665198" expanded="true" signature="3363:4000" ph="INSERT INTO 'missingValue'... " />
+            <marker date="1520632665198" expanded="true" signature="4121:4563" ph="INSERT INTO 'missingValue'... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiltrahan/QuerydbUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#617#681#0" expanded="false" />
+            <marker date="1520633066210" expanded="true" signature="1503:1554" ph="SELECT name sqlite_master" />
+            <marker date="1520633066210" expanded="true" signature="2321:2394" ph="SELECT * FRO... missingValue" />
+            <marker date="1520633066210" expanded="true" signature="3622:3922" ph="SELECT portf... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
       </provider>
