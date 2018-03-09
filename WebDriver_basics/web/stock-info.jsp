@@ -10,6 +10,7 @@
     </head>
     <body>
         <jsp:include page="parts/nav.html"/>
+
         <div class="container">
             <h1 class="text-center stock-info-date">
                 Stock Information For:
