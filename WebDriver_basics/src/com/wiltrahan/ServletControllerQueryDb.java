@@ -35,18 +35,44 @@ public class ServletControllerQueryDb extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
         try {
-            //if 'MORE INFO' button on portfolioTotals.jsp is clicked -- stockInfo is called
-            if(request.getParameter("command") != null) {
-                stockInfo(request, response);
-            } else {
-                portfolioTotals(request, response);
+
+            String theCommand = request.getParameter("command");
+
+            if(theCommand == null) {
+                theCommand = "LIST";
             }
+            switch (theCommand) {
+                case "LIST":
+                    portfolioTotals(request, response);
+                    break;
+                case "LOAD":
+                    stockInfo(request, response);
+                    break;
+                case "CURRENT":
+                    insertInfo(request, response);
+                    break;
+                    default:
+                        portfolioTotals(request, response);
+                        break;
+            }
+            //if 'MORE INFO' button on portfolioTotals.jsp is clicked -- stockInfo is called
+//            if(request.getParameter("command") != null) {
+//                stockInfo(request, response);
+//            } else {
+//                portfolioTotals(request, response);
+//            }
             //if it is not clicked, or click registers null -- portfolioTotals is called
             //portfolioTotals(request, response);
 
         } catch (Exception e) {
            throw new ServletException(e.getMessage());
         }
+    }
+
+    private void insertInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("current.jsp");
+        dispatcher.forward(request, response);
+
     }
 
     private void portfolioTotals(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, ServletException, IOException {
