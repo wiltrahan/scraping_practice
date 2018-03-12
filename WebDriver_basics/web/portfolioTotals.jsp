@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
     <%@ include file="parts/meta.jsp"%>
     <title>Totals</title>
@@ -12,7 +11,13 @@
     <jsp:include page="parts/nav.html"/>
 
     <div class="container">
+
+        <c:url var="current" value="ServletControllerQueryDb">
+            <c:param name="command" value="CURRENT"/>
+        </c:url>
         <h1 class="text-center stock-info-date">Portfolio Details By Date/Time</h1>
+        <a href="${current}"><button type="button" class="btn btn-outline-primary btn-block">Get Current Portfolio Information</button></a>
+
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>

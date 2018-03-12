@@ -29,7 +29,7 @@ public class ServletControllerQueryDb extends HttpServlet {
         try {
             queryDbUtil = new QuerydbUtil();
         } catch (Exception e) {
-            throw new ServletException(e);
+            throw new ServletException(e.getMessage());
         }
     }
 
