@@ -9,9 +9,11 @@ import java.util.List;
 
 public class OpenAndScrape {
 
-    private WebDriver driver = new FirefoxDriver();
+    private static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {
+
+        driver = new FirefoxDriver();
 
         //gets username/password
         Personal personal = new Personal();
@@ -109,11 +111,11 @@ public class OpenAndScrape {
     }
 
     private Stock stockScrape(int i){
-           String symbol = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[1]/span/a")).getText();
-           String value = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[2]/span")).getText();
-           String dayAmtChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[3]/span")).getText();
-           String dayPctChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[4]/span")).getText();
-           String totalShrs = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[8]")).getText();
+        String symbol = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[1]/span/a")).getText();
+        String value = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[2]/span")).getText();
+        String dayAmtChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[3]/span")).getText();
+        String dayPctChg = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[4]/span")).getText();
+        String totalShrs = driver.findElement(By.xpath("/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[" + i + "]/td[8]")).getText();
 
         return new Stock(symbol, value, dayAmtChg, dayPctChg, totalShrs);
     }

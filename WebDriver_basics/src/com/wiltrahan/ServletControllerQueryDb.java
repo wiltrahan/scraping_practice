@@ -22,6 +22,7 @@ public class ServletControllerQueryDb extends HttpServlet {
 
     private QuerydbUtil queryDbUtil;
     private DataSource dataSource;
+    //public WebDriver driver = new FirefoxDriver();
 
     @Override
     public void init() throws ServletException {
@@ -35,9 +36,7 @@ public class ServletControllerQueryDb extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
         try {
-
             String theCommand = request.getParameter("command");
-
             if(theCommand == null) {
                 theCommand = "LIST";
             }
@@ -55,14 +54,6 @@ public class ServletControllerQueryDb extends HttpServlet {
                         portfolioTotals(request, response);
                         break;
             }
-            //if 'MORE INFO' button on portfolioTotals.jsp is clicked -- stockInfo is called
-//            if(request.getParameter("command") != null) {
-//                stockInfo(request, response);
-//            } else {
-//                portfolioTotals(request, response);
-//            }
-            //if it is not clicked, or click registers null -- portfolioTotals is called
-            //portfolioTotals(request, response);
 
         } catch (Exception e) {
            throw new ServletException(e.getMessage());
@@ -70,7 +61,19 @@ public class ServletControllerQueryDb extends HttpServlet {
     }
 
     private void insertInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        WebDriver driver = new FirefoxDriver();
+//        OpenAndScrape openAndScrape = new OpenAndScrape();
+//        openAndScrape.login(driver);
+//        try {
+//            OpenAndScrape.main();
+//        } catch (InterruptedException e) {
+//            System.out.println(e.getMessage());
+//            e.printStackTrace();
+//        }
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("current.jsp");
+
+
         dispatcher.forward(request, response);
 
     }
